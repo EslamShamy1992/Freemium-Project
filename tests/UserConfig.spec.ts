@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { UserConfig } from '../Freemium-Project/pages/UserConfig';
-import { PlantsPage } from '../Freemium-Project/pages/PlantsPage';
+import { UserConfig } from '../pages/UserConfig';
+import { PlantsPage } from '../pages/PlantsPage';
 import { faker } from '@faker-js/faker';
 
 

@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { CheckListType } from '../Freemium-Project/pages/CheckListType';
-import { PlantsPage } from '../Freemium-Project/pages/PlantsPage';
+import { CheckListType } from '../pages/CheckListType';
+import { PlantsPage } from '../pages/PlantsPage';
 import { faker } from '@faker-js/faker';
 
 

@@ -17,7 +17,7 @@ import { config } from 'dotenv';
 config();
 
 
-test.describe("Master Data End-to-End Flow", () => { 
+test.describe("End-to-End Flow", () => { 
     let loginpage:LoginPage;
 let companyAdminUsername:string,
 companyAdminPassword:string;
