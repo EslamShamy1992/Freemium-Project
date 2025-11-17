@@ -5,7 +5,6 @@ import { Page,Locator } from "@playwright/test";
 
 export class ChecklistConfig extends BasePages {
  
-
  private checklistConfigLink: Locator;
   private addChecklistBtn: Locator;
   private checklistNameInput: Locator;
@@ -29,6 +28,7 @@ export class ChecklistConfig extends BasePages {
   private saveBtn: Locator;
   private goodImage:Locator;
   private badImage:Locator;
+  private updateBtn:Locator;
 
     
     constructor(page:Page){
@@ -61,20 +61,40 @@ export class ChecklistConfig extends BasePages {
     this.goodImage = page.locator('input[type="file"]').nth(0); 
     this.badImage= page.locator('input[type="file"]').nth(1); 
 
+    this.updateBtn= page.locator('.mat-focus-indicator.mat-mini-fab.mat-button-base.mat-primary').first();
+
      
 
     }
 
 
 
- 
+    async deleteChecklistConfig() {
+    await this.page.getByRole('button', { name: 'delete' }).first().click();
+    await this.page.getByRole('button', { name: 'Yes, delete it!' }).click();
+  }
 
-  async addChecklistConfig(name: string, checklistType: string) {
+  async updateChecklistConfig(name: string, checklistType: string) {
+
+    await this.updateBtn.click();
+    await this.checklistNameInput.fill(name);
+    await this.checklistTypeDropdown.first().click();
+  await this.page.getByRole('option', { name: checklistType }).locator('span').click();
+  }
+
+  async navigateToChecklistConfig() {
     await this.checklistConfigLink.click();
+  }
+
+  async clickSaveUpdate() {
+   await this.page.getByLabel('Update CheckList').getByRole('button').filter({ hasText: 'edit' }).click();
+  }
+  async addChecklistConfig(name: string, checklistType: string) {
     await this.addChecklistBtn.click();
     await this.checklistNameInput.fill(name);
     await this.checklistTypeDropdown.click();
-  await this.page.getByRole('option', { name: checklistType }).locator('span').click();
+    await this.page.waitForTimeout(1000);
+    await this.page.getByRole('option', { name: checklistType }).locator('span').click();
     await this.selectUnitsDropdown.click();
     await this.selectAllUnits.click();
     await this.page.mouse.click(0, 0); 

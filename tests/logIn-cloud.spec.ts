@@ -6,6 +6,7 @@ let loginpage:LoginPage;
 let companyAdminUsername:string,
 companyAdminPassword:string;
 test.describe('Login TestCases', async () => {
+    test.use({ storageState:{cookies: [], origins: []} });
 
   test.beforeEach(async({page})=> {
     loginpage= new LoginPage(page);
@@ -19,7 +20,6 @@ test('login with a valid credentials', async ({ page }) => {
 
 await loginpage.login_with_valid_account(companyAdminUsername,companyAdminPassword)
 await expect(page.getByRole('button', { name: 'Profile' }).first()).toBeVisible()
-await page.pause()
 
 });
 

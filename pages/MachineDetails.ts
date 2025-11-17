@@ -3,7 +3,7 @@ import { BasePages } from './BasePages';
 
 export class MachineDetails extends BasePages {
  
-   private machineDetailsMenu: Locator;
+  private machineDetailsMenu: Locator;
   private addBtn: Locator;
   private departmentNameInput: Locator;
   private machineInput: Locator;
@@ -39,7 +39,6 @@ export class MachineDetails extends BasePages {
   }
 
   async updateMachine( oldMachine: string, newMachine: string) {
-    // await this.page.getByRole('gridcell', { name: department }).click();
     await this.page.getByRole('gridcell', { name: oldMachine }).click();
     await this.editIcon.click();
     await this.machineInput.fill(newMachine);

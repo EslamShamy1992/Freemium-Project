@@ -20,8 +20,13 @@ private uploadMasterDataBtn: Locator;
 
 
 
-     async openManulSetup() {
+   async openManulSetup() {
     await this.uploadMasterDataBtn.click();
     await this.manualSetupHeading.click();
   }
+
+  
+
+
+
 }

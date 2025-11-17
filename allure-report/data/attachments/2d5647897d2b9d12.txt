@@ -1,0 +1,2 @@
+CheckList Type Added: annual
+CheckList Type Updated: publication

@@ -15,6 +15,10 @@ private productMenu: Locator;
   private speedInput: Locator;
   private uomInput: Locator;
   private saveBtn: Locator;
+  private confirmDeleteBtn: Locator;
+  private deleteBtn: Locator;
+  private editIcon: Locator;
+  private updateBtn: Locator;
 
     constructor(page:Page){
         super(page)
@@ -28,6 +32,10 @@ private productMenu: Locator;
     this.speedInput = page.getByRole('spinbutton', { name: 'Speed' });
     this.uomInput = page.getByRole('textbox', { name: 'UOM' });
     this.saveBtn = page.getByRole('button', { name: 'Save' });
+    this.confirmDeleteBtn = page.getByRole('button', { name: 'Yes' });
+        this.deleteBtn= page.locator('.mat-icon.notranslate.material-icons.mat-icon-no-color.delete-icon').first();
+    this.editIcon = page.locator('.mat-icon.notranslate.material-icons.mat-icon-no-color.edit-icon').first();
+     this.updateBtn = page.getByRole('button', { name: 'Update' });
      
 
     }
@@ -46,4 +54,18 @@ private productMenu: Locator;
     await this.uomInput.fill(uom);
     await this.saveBtn.click();
   }
+
+
+  async deleteProductConfig() {
+  await this.deleteBtn.click();
+    await this.confirmDeleteBtn.click();
+  }
+  async updateProductConfig( speed: string, uom: string) { 
+
+    await this.editIcon.click();
+   
+    await this.speedInput.fill(speed);
+    await this.uomInput.fill(uom);
+    await this.updateBtn.click();
+  } 
 }

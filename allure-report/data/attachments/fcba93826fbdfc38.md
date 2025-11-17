@@ -1,0 +1,309 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - button [ref=e8] [cursor=pointer]:
+        - img [ref=e10] [cursor=pointer]
+      - navigation [ref=e14]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - img [ref=e20] [cursor=pointer]
+    - generic [ref=e21]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e27]:
+            - button [ref=e28] [cursor=pointer]:
+              - img [ref=e30] [cursor=pointer]
+            - combobox [ref=e32]
+        - generic [ref=e33]:
+          - generic [ref=e38]:
+            - textbox [ref=e39]: o3
+            - generic:
+              - generic:
+                - generic: Group
+          - button [ref=e40] [cursor=pointer]:
+            - img [ref=e42] [cursor=pointer]
+          - button [ref=e44] [cursor=pointer]:
+            - generic [ref=e48] [cursor=pointer]: SS
+      - generic [ref=e50]:
+        - heading [level=1] [ref=e51]: User Plants
+        - generic [ref=e53] [cursor=pointer]:
+          - generic [ref=e54] [cursor=pointer]:
+            - generic [ref=e55] [cursor=pointer]:
+              - img [ref=e56] [cursor=pointer]: apartment
+              - heading [level=2] [ref=e57] [cursor=pointer]: O3Plant
+            - paragraph [ref=e58] [cursor=pointer]: o3
+          - generic [ref=e59] [cursor=pointer]:
+            - generic [ref=e60] [cursor=pointer]:
+              - generic [ref=e61] [cursor=pointer]: "CR Number:"
+              - generic [ref=e62] [cursor=pointer]: Cr001
+            - generic [ref=e63] [cursor=pointer]:
+              - generic [ref=e64] [cursor=pointer]: "License Status:"
+              - generic [ref=e65] [cursor=pointer]:
+                - img [ref=e66] [cursor=pointer]: check_circle
+                - text: Active
+            - generic [ref=e67] [cursor=pointer]:
+              - generic [ref=e68] [cursor=pointer]: "Data Config:"
+              - generic [ref=e69] [cursor=pointer]: Configured
+            - generic [ref=e70] [cursor=pointer]:
+              - generic [ref=e71] [cursor=pointer]: "Data Sync Frequency:"
+              - generic [ref=e72] [cursor=pointer]: Every 1 Day(s)
+            - generic [ref=e73] [cursor=pointer]:
+              - generic [ref=e74] [cursor=pointer]: "Data Limit:"
+              - generic [ref=e75] [cursor=pointer]: 300 GB/Month
+            - generic [ref=e77] [cursor=pointer]: "Last Sync:"
+          - generic [ref=e78] [cursor=pointer]:
+            - button [ref=e79] [cursor=pointer]:
+              - generic [ref=e80] [cursor=pointer]:
+                - img [ref=e81] [cursor=pointer]: download
+                - text: Download Freemium Installer
+            - generic [ref=e82] [cursor=pointer]:
+              - button [ref=e83] [cursor=pointer]:
+                - generic [ref=e84] [cursor=pointer]:
+                  - img [ref=e85] [cursor=pointer]: vpn_key
+                  - text: License Key
+              - button [ref=e86] [cursor=pointer]:
+                - generic [ref=e87] [cursor=pointer]:
+                  - img [ref=e88] [cursor=pointer]: upload
+                  - text: Upload Master Data
+  - dialog [ref=e92]:
+    - generic [ref=e93]:
+      - generic [ref=e95]:
+        - heading "Upload Master Data" [level=2] [ref=e96]
+        - button "close" [ref=e97] [cursor=pointer]:
+          - img [ref=e99] [cursor=pointer]: close
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - heading "Manual Setup" [level=3] [ref=e106] [cursor=pointer]
+          - heading "Bulk Upload" [level=3] [ref=e108] [cursor=pointer]
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - button [ref=e113] [cursor=pointer]
+            - tablist [ref=e116]:
+              - generic [ref=e117]:
+                - tab "Machine Details" [ref=e118] [cursor=pointer]:
+                  - generic [ref=e119] [cursor=pointer]:
+                    - img [ref=e120] [cursor=pointer]: precision_manufacturing
+                    - text: Machine Details
+                - tab "Machine Parameters" [ref=e121] [cursor=pointer]:
+                  - generic [ref=e122] [cursor=pointer]:
+                    - img [ref=e123] [cursor=pointer]: tune
+                    - text: Machine Parameters
+                - tab "Product Configuration" [ref=e124] [cursor=pointer]:
+                  - generic [ref=e125] [cursor=pointer]:
+                    - img [ref=e126] [cursor=pointer]: inventory_2
+                    - text: Product Configuration
+                - tab "Downtime Configuration" [ref=e127] [cursor=pointer]:
+                  - generic [ref=e128] [cursor=pointer]:
+                    - img [ref=e129] [cursor=pointer]: timer_off
+                    - text: Downtime Configuration
+                - tab "Waste Configuration" [ref=e130] [cursor=pointer]:
+                  - generic [ref=e131] [cursor=pointer]:
+                    - img [ref=e132] [cursor=pointer]: delete
+                    - text: Waste Configuration
+                - tab "User Configuration" [selected] [ref=e133] [cursor=pointer]:
+                  - generic [ref=e134] [cursor=pointer]:
+                    - img [ref=e135] [cursor=pointer]: people
+                    - text: User Configuration
+                - tab "Crew Schedule" [ref=e136] [cursor=pointer]:
+                  - generic [ref=e137] [cursor=pointer]:
+                    - img [ref=e138] [cursor=pointer]: schedule
+                    - text: Crew Schedule
+                - tab "OEE Configuration" [ref=e139] [cursor=pointer]:
+                  - generic [ref=e140] [cursor=pointer]:
+                    - img [ref=e141] [cursor=pointer]: assessment
+                    - text: OEE Configuration
+                - tab "Parameter Specifications" [ref=e142] [cursor=pointer]:
+                  - generic [ref=e143] [cursor=pointer]:
+                    - img [ref=e144] [cursor=pointer]: settings_input_component
+                    - text: Parameter Specifications
+                - tab "CheckList Type" [ref=e145] [cursor=pointer]:
+                  - generic [ref=e146] [cursor=pointer]:
+                    - img [ref=e147] [cursor=pointer]: task_alt
+                    - text: CheckList Type
+                - tab "Checklist Configuration" [ref=e148] [cursor=pointer]:
+                  - generic [ref=e149] [cursor=pointer]:
+                    - img [ref=e150] [cursor=pointer]: checklist
+                    - text: Checklist Configuration
+            - button [ref=e152] [cursor=pointer]
+          - generic [ref=e154]:
+            - tabpanel "Machine Details" [ref=e155]
+            - tabpanel "Machine Parameters" [ref=e157]
+            - tabpanel "Product Configuration" [ref=e159]
+            - tabpanel "Downtime Configuration" [ref=e161]
+            - tabpanel "Waste Configuration" [ref=e163]
+            - tabpanel "User Configuration" [ref=e165]:
+              - generic [ref=e167]:
+                - generic [ref=e168]:
+                  - img [ref=e169]: people
+                  - heading "User Configuration" [level=3] [ref=e170]
+                - button "Add" [active] [ref=e172] [cursor=pointer]:
+                  - generic [ref=e173] [cursor=pointer]:
+                    - img [ref=e174] [cursor=pointer]: add
+                    - text: Add
+                - generic [ref=e176]:
+                  - generic:  
+                  - grid [ref=e178]:
+                    - rowgroup [ref=e179]:
+                      - row "First Name Last Name Phone Email Actions" [ref=e180]:
+                        - columnheader "First Name" [ref=e181] [cursor=pointer]:
+                          - text: 
+                          - generic [ref=e182] [cursor=pointer]: 
+                          - generic [ref=e183] [cursor=pointer]: First Name
+                          - text:    
+                        - columnheader "Last Name" [ref=e184] [cursor=pointer]:
+                          - text: 
+                          - generic [ref=e185] [cursor=pointer]: 
+                          - generic [ref=e186] [cursor=pointer]: Last Name
+                          - text:    
+                        - columnheader "Phone" [ref=e187] [cursor=pointer]:
+                          - text: 
+                          - generic [ref=e188] [cursor=pointer]: 
+                          - generic [ref=e189] [cursor=pointer]: Phone
+                          - text:    
+                        - columnheader "Email" [ref=e190] [cursor=pointer]:
+                          - text: 
+                          - generic [ref=e191] [cursor=pointer]: 
+                          - generic [ref=e192] [cursor=pointer]: Email
+                          - text:    
+                        - columnheader "Actions" [ref=e193] [cursor=pointer]:
+                          - text: 
+                          - generic [ref=e194] [cursor=pointer]: Actions
+                          - text:    
+                    - rowgroup [ref=e195]:
+                      - row "Press SPACE to select this row." [ref=e196]:
+                        - gridcell "Bridget" [ref=e197]
+                        - gridcell "Dickinson" [ref=e198]
+                        - gridcell "+966549964703" [ref=e199]
+                        - gridcell "Rosa_Green@yahoo.com" [ref=e200]
+                        - gridcell [ref=e201]:
+                          - generic [ref=e202]:
+                            - img [ref=e203] [cursor=pointer]: edit
+                            - img [ref=e204] [cursor=pointer]: delete
+                            - img [ref=e205] [cursor=pointer]: verified_user
+                            - img [ref=e206] [cursor=pointer]: lock
+                      - row "Press SPACE to select this row." [ref=e207]:
+                        - gridcell "Lura" [ref=e208]
+                        - gridcell "Tillman" [ref=e209]
+                        - gridcell "+966541151939" [ref=e210]
+                        - gridcell "Casimer57@gmail.com" [ref=e211]
+                        - gridcell [ref=e212]:
+                          - generic [ref=e213]:
+                            - img [ref=e214] [cursor=pointer]: edit
+                            - img [ref=e215] [cursor=pointer]: delete
+                            - img [ref=e216] [cursor=pointer]: verified_user
+                            - img [ref=e217] [cursor=pointer]: lock
+                      - row "Press SPACE to select this row." [ref=e218]:
+                        - gridcell "Jayme" [ref=e219]
+                        - gridcell "Abernathy" [ref=e220]
+                        - gridcell "+966548428424" [ref=e221]
+                        - gridcell "George.Hartmann91@yahoo.com" [ref=e222]
+                        - gridcell [ref=e223]:
+                          - generic [ref=e224]:
+                            - img [ref=e225] [cursor=pointer]: edit
+                            - img [ref=e226] [cursor=pointer]: delete
+                            - img [ref=e227] [cursor=pointer]: verified_user
+                            - img [ref=e228] [cursor=pointer]: lock
+                      - row "Press SPACE to select this row." [ref=e229]:
+                        - gridcell "Felicity" [ref=e230]
+                        - gridcell "Langworth-Christiansen" [ref=e231]
+                        - gridcell "+966543889917" [ref=e232]
+                        - gridcell "Dallin.Ernser-Cassin5@hotmail.com" [ref=e233]
+                        - gridcell [ref=e234]:
+                          - generic [ref=e235]:
+                            - img [ref=e236] [cursor=pointer]: edit
+                            - img [ref=e237] [cursor=pointer]: delete
+                            - img [ref=e238] [cursor=pointer]: verified_user
+                            - img [ref=e239] [cursor=pointer]: lock
+                      - row "Press SPACE to select this row." [ref=e240]:
+                        - gridcell "Benedict" [ref=e241]
+                        - gridcell "Cremin" [ref=e242]
+                        - gridcell "+966546333296" [ref=e243]
+                        - gridcell "Vincenzo99@gmail.com" [ref=e244]
+                        - gridcell [ref=e245]:
+                          - generic [ref=e246]:
+                            - img [ref=e247] [cursor=pointer]: edit
+                            - img [ref=e248] [cursor=pointer]: delete
+                            - img [ref=e249] [cursor=pointer]: verified_user
+                            - img [ref=e250] [cursor=pointer]: lock
+                      - row "Press SPACE to select this row." [ref=e251]:
+                        - gridcell "Gerald" [ref=e252]
+                        - gridcell "Powlowski" [ref=e253]
+                        - gridcell "+966545550334" [ref=e254]
+                        - gridcell "Alana41@yahoo.com" [ref=e255]
+                        - gridcell [ref=e256]:
+                          - generic [ref=e257]:
+                            - img [ref=e258] [cursor=pointer]: edit
+                            - img [ref=e259] [cursor=pointer]: delete
+                            - img [ref=e260] [cursor=pointer]: verified_user
+                            - img [ref=e261] [cursor=pointer]: lock
+                      - row "Press SPACE to select this row." [ref=e262]:
+                        - gridcell "Astrid" [ref=e263]
+                        - gridcell "Dare" [ref=e264]
+                        - gridcell "+966546202266" [ref=e265]
+                        - gridcell "Alvena63@gmail.com" [ref=e266]
+                        - gridcell [ref=e267]:
+                          - generic [ref=e268]:
+                            - img [ref=e269] [cursor=pointer]: edit
+                            - img [ref=e270] [cursor=pointer]: delete
+                            - img [ref=e271] [cursor=pointer]: verified_user
+                            - img [ref=e272] [cursor=pointer]: lock
+                      - row "Press SPACE to select this row." [ref=e273]:
+                        - gridcell "Jailyn" [ref=e274]
+                        - gridcell "Kutch" [ref=e275]
+                        - gridcell "+966542510475" [ref=e276]
+                        - gridcell "Deontae91@hotmail.com" [ref=e277]
+                        - gridcell [ref=e278]:
+                          - generic [ref=e279]:
+                            - img [ref=e280] [cursor=pointer]: edit
+                            - img [ref=e281] [cursor=pointer]: delete
+                            - img [ref=e282] [cursor=pointer]: verified_user
+                            - img [ref=e283] [cursor=pointer]: lock
+                      - row "Press SPACE to select this row." [ref=e284]:
+                        - gridcell "Justyn" [ref=e285]
+                        - gridcell "Boehm" [ref=e286]
+                        - gridcell "+966545834561" [ref=e287]
+                        - gridcell "Marian.Hintz@yahoo.com" [ref=e288]
+                        - gridcell [ref=e289]:
+                          - generic [ref=e290]:
+                            - img [ref=e291] [cursor=pointer]: edit
+                            - img [ref=e292] [cursor=pointer]: delete
+                            - img [ref=e293] [cursor=pointer]: verified_user
+                            - img [ref=e294] [cursor=pointer]: lock
+                      - row "Press SPACE to select this row." [ref=e295]:
+                        - gridcell "Ayden" [ref=e296]
+                        - gridcell "Armstrong" [ref=e297]
+                        - gridcell "+966548418532" [ref=e298]
+                        - gridcell "Zakary_Kling@hotmail.com" [ref=e299]
+                        - gridcell [ref=e300]:
+                          - generic [ref=e301]:
+                            - img [ref=e302] [cursor=pointer]: edit
+                            - img [ref=e303] [cursor=pointer]: delete
+                            - img [ref=e304] [cursor=pointer]: verified_user
+                            - img [ref=e305] [cursor=pointer]: lock
+                  - generic [ref=e306]:
+                    - generic [ref=e307]:
+                      - generic [ref=e308]: "1"
+                      - generic [ref=e309]: to
+                      - generic [ref=e310]: "10"
+                      - generic [ref=e311]: of
+                      - generic [ref=e312]: "22"
+                    - button "First Page" [disabled] [ref=e313]: 
+                    - button "Previous Page" [disabled] [ref=e314]: 
+                    - generic [ref=e315]:
+                      - generic [ref=e316]: Page
+                      - generic [ref=e317]: "1"
+                      - generic [ref=e318]: of
+                      - generic [ref=e319]: "3"
+                    - button "Next Page" [ref=e320] [cursor=pointer]: 
+                    - button "Last Page" [ref=e321] [cursor=pointer]: 
+            - tabpanel "Crew Schedule" [ref=e322]
+            - tabpanel "OEE Configuration" [ref=e324]
+            - tabpanel "Parameter Specifications" [ref=e326]
+            - tabpanel "CheckList Type" [ref=e328]
+            - tabpanel "Checklist Configuration" [ref=e330]
+  - alertdialog "Employee Created Successfully" [ref=e335]
+```

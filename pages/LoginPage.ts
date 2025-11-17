@@ -6,7 +6,6 @@ import { Page,Locator } from "@playwright/test";
 export class LoginPage extends BasePages {
  
 
-
     private username:Locator;
     private password:Locator;
     private loginButton:Locator;
@@ -23,7 +22,6 @@ export class LoginPage extends BasePages {
 
 
     async login_with_valid_account(username:string,pass:string){
-
 
         await this.username.fill(username);
         await this.password.fill(pass);

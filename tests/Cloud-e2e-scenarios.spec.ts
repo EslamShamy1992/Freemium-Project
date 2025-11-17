@@ -1,5 +1,5 @@
 import { test ,expect} from "@playwright/test";
-import {  faker, fi } from "@faker-js/faker";
+import {  faker} from "@faker-js/faker";
 import { LoginPage } from "../pages/LoginPage";
 import { PlantsPage } from "../pages/PlantsPage";
 import { MachineDetails } from "../pages/MachineDetails";
@@ -18,7 +18,7 @@ config();
 
 
 test.describe("End-to-End Flow", () => { 
-    let loginpage:LoginPage;
+ let loginpage:LoginPage;
 let companyAdminUsername:string,
 companyAdminPassword:string;
 let plantsPage: PlantsPage;
@@ -85,7 +85,7 @@ let preferredDataType: string;
         checklistConfig = new ChecklistConfig(page);
         companyAdminUsername=process.env.CompanyAdminUsername as string
         companyAdminPassword= process.env.CompanyAdminPassword as string
-       await page.goto('/login');
+       await page.goto('/userjourneyplants');
         departmentName = faker.commerce.department();
         machineName = `M-${faker.number.int({ min: 100, max: 999 })}`;
         Parameter = `Param-${faker.word.noun()}`;
@@ -102,7 +102,7 @@ let preferredDataType: string;
          categoryType = 'Waste';
           firstName = faker.person.firstName();
          lastName = faker.person.lastName();
-         phone = '54' + faker.string.numeric(7);
+         phone = '10' + faker.string.numeric(8);
           email = faker.internet.email();
          password = '12345Sport@';
           shift = `Shift ${faker.person.firstName()}`;
@@ -125,40 +125,40 @@ let preferredDataType: string;
       });
   test("should create all master data successfully", async ({ page }) => {
 
-    await loginpage.login_with_valid_account(companyAdminUsername,companyAdminPassword)
+    // await loginpage.login_with_valid_account(companyAdminUsername,companyAdminPassword)
     await plantsPage.openManulSetup();
     await machineDetails.addMachineDetails(departmentName, machineName);
     console.log('Machine Details Added:', departmentName, machineName);
     await expect(page.getByText('Record added successfully')).toBeVisible();
-
     await machineParameter.addMachineParameter(machineName, Parameter, samplingInterval,preferredDataType);
     console.log('Machine Parameter Added:', machineName, Parameter, samplingInterval, preferredDataType);
-      await expect(page.getByText('Record Inserted successfully')).toBeVisible();
-
+    await expect(page.getByText('Record Inserted successfully')).toBeVisible();
     await productConfig.addProductConfig(productCode, productDesc, machineName, speed, uom);
+    console.log('Product Config Added:',productCode, productDesc, machineName, speed, uom);
     await expect(page.getByText('Product configuration created')).toBeVisible();
-
     await downtimeConfig.addDownTimeConfig(machineName, faultCode, faultName, reasons);
     console.log('DownTime Config Added:',machineName, faultCode, faultName, reasons);
     await expect(page.getByText('Downtime fault created')).toBeVisible();
-
     await wasteConfig.addWasteConfig(machineName,categoryType, faultCode, faultName, reasons);
     console.log('Waste Config Added:',machineName,categoryType, faultCode, faultName, reasons);
     await expect(page.getByText('Waste fault created')).toBeVisible();
-
     await userConfig.addUserConfig(firstName, lastName, phone, email, password);
+    console.log('User Config Added:', firstName, lastName, phone, email);
     await expect(page.getByText('Employee Created Successfully')).toBeVisible();
-
    await crewSchedule.addCrewSchedule(shift);
    await crewSchedule.deleteCrewSchedule();
    await crewSchedule.addCrewSchedule(shift);
    await expect(page.getByText('Shift and Crew Schedule created')).toBeVisible();
     await oeeConfig.addOEEConfig(machineName,Parameter,auto,faultName);
+    console.log('OEE Config Added:', machineName,Parameter,auto,faultName);
+    await expect (page.getByText('OEE Configuration Added Successfully')).toBeVisible();
+    await parameterSpecifications.navigatetoParameterSpecifications();
     await parameterSpecifications.addParameterSpecification( Parameter, product, lrl, lsl, lwl, target, uwl,usl );
     console.log('Parameter Specifications Added:', Parameter, product, lrl, lsl, lwl, target, uwl, usl);
-     await expect (page.getByText('OEE Configuration Added')).toBeVisible();
     await checkListType.addCheckListType(checklisttype);
+    console.log('CheckList Type Added:',checklisttype);
     await expect( page.getByText('CheckList Type Added')).toBeVisible();
+    await checklistConfig.navigateToChecklistConfig();
     await checklistConfig.addChecklistConfig(checklistNameInput,checklisttype);
     await checklistConfig.addGroup(groupName);
     await checklistConfig.addItem(itemName, groupName);
