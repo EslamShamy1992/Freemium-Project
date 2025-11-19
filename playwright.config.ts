@@ -19,16 +19,16 @@ export default defineConfig({
 
   globalSetup:require.resolve('./auth/global-setup'),
 
-  timeout: 90*1000,
+  timeout: 120*1000,
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 1 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 3 : undefined,
+  workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['list'],                      // shows results in terminal
@@ -39,8 +39,9 @@ export default defineConfig({
   use: {
      /*Base URL to use in actions like `await page.goto('/Signup')`. */
     baseURL: 'https://mes-lite.o3ozone.ai/',
-    headless: process.env.CI ? true : false,
+    // headless: process.env.CI ? true : false,
     storageState: "auth.json",
+    headless: false,
 
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
@@ -52,7 +53,7 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] ,
-       headless: process.env.CI ? true : false,
+      //  headless: process.env.CI ? true : false,
 
       },
     },
