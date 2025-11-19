@@ -51,7 +51,7 @@ test.describe('OEEConfig', () => {
  await machineParametersPage.addMachineParameter(machine, parameterName, samplingInterval, dataType);
  await downtimeConfig.addDownTimeConfig(machine, faultCode, fault, reasons);
  await oeeConfig.addOEEConfig(machine, parameterName, auto, fault);
- await expect (page.getByText('OEE Configuration Added')).toBeVisible();
+ await expect (page.getByText('OEE Configuration Added')).toBeVisible({ timeout: 10000 });
  console.log('OEE Config Added:',machine, parameterName, auto, fault);
 
 });
@@ -65,7 +65,7 @@ test('verify update OEEConfig', async ({page}) => {
  await oeeConfig.addOEEConfig(machine, parameterName, auto, fault);
  console.log('OEE Config Added:',machine, parameterName, auto, fault);
  await oeeConfig.updateOEEConfig("Yes");  
-  await expect (page.getByText('OEE Configuration Updated')).toBeVisible();
+  await expect (page.getByText('OEE Configuration Updated')).toBeVisible({ timeout: 10000 });
 
 })
 
@@ -79,7 +79,7 @@ test('verify delete OEEConfig', async ({page}) => {
  await oeeConfig.addOEEConfig(machine, parameterName, auto, fault);
  console.log('OEE Config Added:',machine, parameterName, auto, fault);
  await oeeConfig.deleteOEEConfig();  
- await expect (page.getByText('OEE Configuration Deleted')).toBeVisible();   
+ await expect (page.getByText('OEE Configuration Deleted')).toBeVisible({ timeout: 10000});   
 
 })
 

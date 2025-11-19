@@ -42,9 +42,9 @@ export class OEEConfig extends BasePages {
     await this.addBtn.click();
     await this.machineDropdown.click();
     await this.machineOption(machine).click();
-    await this.page.waitForTimeout(1000);
+    await this.page.waitForTimeout(2000);
     await this.netGrossDropdown.click();
-    await this.page.waitForTimeout(1000);
+    await this.page.waitForTimeout(2000);
     await this.netGrossOption(netgross).click();
     await this.autoPoDropdown.click();
     await this.page.waitForTimeout(1000);

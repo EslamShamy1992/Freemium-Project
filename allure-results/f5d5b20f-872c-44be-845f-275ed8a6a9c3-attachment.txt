@@ -1,0 +1,2 @@
+Machine Details Added: Toys Machine-609
+Machine Parameter Added: Machine-609 scorn 43 Int

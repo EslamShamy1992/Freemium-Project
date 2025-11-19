@@ -55,10 +55,11 @@ async navigatetoParameterSpecifications(){
   }
     
   async addParameterSpecification(param: string, product: string, lrl: string, lsl: string, lwl: string, target: string, uwl: string, usl: string) {
-    await this.page.waitForTimeout(1000);
     await this.addBtn.click();
+    await this.page.waitForTimeout(2000);
     await this.parametersDropdown.click();
     await this.page.getByRole('option', { name: param }).locator('span').click();
+    await this.page.waitForTimeout(2000);
     await this.productsDropdown.click();
     await this.page.getByRole('option', { name: product }).first().click();
     await this.page.mouse.click(0,0)  

@@ -1,0 +1,428 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - button [ref=e8] [cursor=pointer]:
+        - img [ref=e10] [cursor=pointer]
+      - navigation [ref=e14]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - img [ref=e20] [cursor=pointer]
+    - generic [ref=e21]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e27]:
+            - button [ref=e28] [cursor=pointer]:
+              - img [ref=e30] [cursor=pointer]
+            - combobox [ref=e32]
+        - generic [ref=e33]:
+          - generic [ref=e38]:
+            - textbox [ref=e39]: o3
+            - generic:
+              - generic:
+                - generic: Group
+          - button [ref=e40] [cursor=pointer]:
+            - img [ref=e42] [cursor=pointer]
+          - button [ref=e44] [cursor=pointer]:
+            - generic [ref=e48] [cursor=pointer]: SS
+      - generic [ref=e49]:
+        - img [ref=e52]
+        - generic [ref=e53]:
+          - heading [level=1] [ref=e54]: User Plants
+          - generic [ref=e56] [cursor=pointer]:
+            - generic [ref=e57] [cursor=pointer]:
+              - generic [ref=e58] [cursor=pointer]:
+                - img [ref=e59] [cursor=pointer]: apartment
+                - heading [level=2] [ref=e60] [cursor=pointer]: O3Plant
+              - paragraph [ref=e61] [cursor=pointer]: o3
+            - generic [ref=e62] [cursor=pointer]:
+              - generic [ref=e63] [cursor=pointer]:
+                - generic [ref=e64] [cursor=pointer]: "CR Number:"
+                - generic [ref=e65] [cursor=pointer]: Cr001
+              - generic [ref=e66] [cursor=pointer]:
+                - generic [ref=e67] [cursor=pointer]: "License Status:"
+                - generic [ref=e68] [cursor=pointer]:
+                  - img [ref=e69] [cursor=pointer]: check_circle
+                  - text: Active
+              - generic [ref=e70] [cursor=pointer]:
+                - generic [ref=e71] [cursor=pointer]: "Data Config:"
+                - generic [ref=e72] [cursor=pointer]: Configured
+              - generic [ref=e73] [cursor=pointer]:
+                - generic [ref=e74] [cursor=pointer]: "Data Sync Frequency:"
+                - generic [ref=e75] [cursor=pointer]: Every 1 Day(s)
+              - generic [ref=e76] [cursor=pointer]:
+                - generic [ref=e77] [cursor=pointer]: "Data Limit:"
+                - generic [ref=e78] [cursor=pointer]: 300 GB/Month
+              - generic [ref=e80] [cursor=pointer]: "Last Sync:"
+            - generic [ref=e81] [cursor=pointer]:
+              - button [ref=e82] [cursor=pointer]:
+                - generic [ref=e83] [cursor=pointer]:
+                  - img [ref=e84] [cursor=pointer]: download
+                  - text: Download Freemium Installer
+              - generic [ref=e85] [cursor=pointer]:
+                - button [ref=e86] [cursor=pointer]:
+                  - generic [ref=e87] [cursor=pointer]:
+                    - img [ref=e88] [cursor=pointer]: vpn_key
+                    - text: License Key
+                - button [ref=e89] [cursor=pointer]:
+                  - generic [ref=e90] [cursor=pointer]:
+                    - img [ref=e91] [cursor=pointer]: upload
+                    - text: Upload Master Data
+  - generic:
+    - dialog [ref=e95]:
+      - generic [ref=e96]:
+        - generic [ref=e98]:
+          - heading "Upload Master Data" [level=2] [ref=e99]
+          - button "close" [ref=e100] [cursor=pointer]:
+            - img [ref=e102] [cursor=pointer]: close
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - heading "Manual Setup" [level=3] [ref=e109] [cursor=pointer]
+            - heading "Bulk Upload" [level=3] [ref=e111] [cursor=pointer]
+          - generic [ref=e112]:
+            - img [ref=e115]
+            - generic [ref=e117]:
+              - generic [ref=e118]:
+                - button [ref=e119] [cursor=pointer]
+                - tablist [ref=e122]:
+                  - generic [ref=e123]:
+                    - tab "Machine Details" [ref=e124] [cursor=pointer]:
+                      - generic [ref=e125] [cursor=pointer]:
+                        - img [ref=e126] [cursor=pointer]: precision_manufacturing
+                        - text: Machine Details
+                    - tab "Machine Parameters" [ref=e127] [cursor=pointer]:
+                      - generic [ref=e128] [cursor=pointer]:
+                        - img [ref=e129] [cursor=pointer]: tune
+                        - text: Machine Parameters
+                    - tab "Product Configuration" [ref=e130] [cursor=pointer]:
+                      - generic [ref=e131] [cursor=pointer]:
+                        - img [ref=e132] [cursor=pointer]: inventory_2
+                        - text: Product Configuration
+                    - tab "Downtime Configuration" [ref=e133] [cursor=pointer]:
+                      - generic [ref=e134] [cursor=pointer]:
+                        - img [ref=e135] [cursor=pointer]: timer_off
+                        - text: Downtime Configuration
+                    - tab "Waste Configuration" [ref=e136] [cursor=pointer]:
+                      - generic [ref=e137] [cursor=pointer]:
+                        - img [ref=e138] [cursor=pointer]: delete
+                        - text: Waste Configuration
+                    - tab "User Configuration" [ref=e139] [cursor=pointer]:
+                      - generic [ref=e140] [cursor=pointer]:
+                        - img [ref=e141] [cursor=pointer]: people
+                        - text: User Configuration
+                    - tab "Crew Schedule" [ref=e142] [cursor=pointer]:
+                      - generic [ref=e143] [cursor=pointer]:
+                        - img [ref=e144] [cursor=pointer]: schedule
+                        - text: Crew Schedule
+                    - tab "OEE Configuration" [ref=e145] [cursor=pointer]:
+                      - generic [ref=e146] [cursor=pointer]:
+                        - img [ref=e147] [cursor=pointer]: assessment
+                        - text: OEE Configuration
+                    - tab "Parameter Specifications" [ref=e148] [cursor=pointer]:
+                      - generic [ref=e149] [cursor=pointer]:
+                        - img [ref=e150] [cursor=pointer]: settings_input_component
+                        - text: Parameter Specifications
+                    - tab "CheckList Type" [ref=e151] [cursor=pointer]:
+                      - generic [ref=e152] [cursor=pointer]:
+                        - img [ref=e153] [cursor=pointer]: task_alt
+                        - text: CheckList Type
+                    - tab "Checklist Configuration" [selected] [ref=e154] [cursor=pointer]:
+                      - generic [ref=e155] [cursor=pointer]:
+                        - img [ref=e156] [cursor=pointer]: checklist
+                        - text: Checklist Configuration
+                - button [disabled] [ref=e158]
+              - generic [ref=e160]:
+                - tabpanel "Machine Details" [ref=e161]
+                - tabpanel "Machine Parameters" [ref=e163]
+                - tabpanel "Product Configuration" [ref=e165]
+                - tabpanel "Downtime Configuration" [ref=e167]
+                - tabpanel "Waste Configuration" [ref=e169]
+                - tabpanel "User Configuration" [ref=e171]
+                - tabpanel "Crew Schedule" [ref=e173]
+                - tabpanel "OEE Configuration" [ref=e175]
+                - tabpanel "Parameter Specifications" [ref=e177]
+                - tabpanel "CheckList Type" [ref=e179]
+                - tabpanel "Checklist Configuration" [ref=e181]:
+                  - generic [ref=e183]:
+                    - generic [ref=e184]:
+                      - img [ref=e185]: checklist
+                      - heading "Checklist Configuration" [level=3] [ref=e186]
+                    - generic [ref=e188]:
+                      - button "" [ref=e191] [cursor=pointer]:
+                        - generic [ref=e193] [cursor=pointer]: 
+                      - generic [ref=e194]:
+                        - img [ref=e197]
+                        - generic [ref=e199]:
+                          - generic:  
+                          - grid [ref=e201]:
+                            - rowgroup [ref=e202]:
+                              - row "CheckList Name Checklist Type Units Action" [ref=e203]:
+                                - columnheader "CheckList Name" [ref=e204] [cursor=pointer]:
+                                  - text: 
+                                  - generic [ref=e205] [cursor=pointer]: 
+                                  - generic [ref=e206] [cursor=pointer]: CheckList Name
+                                  - text:    
+                                - columnheader "Checklist Type" [ref=e207] [cursor=pointer]:
+                                  - text: 
+                                  - generic [ref=e208] [cursor=pointer]: 
+                                  - generic [ref=e209] [cursor=pointer]: Checklist Type
+                                  - text:    
+                                - columnheader "Units" [ref=e210] [cursor=pointer]:
+                                  - text: 
+                                  - generic [ref=e211] [cursor=pointer]: 
+                                  - generic [ref=e212] [cursor=pointer]: Units
+                                  - text:    
+                                - columnheader "Action" [ref=e213] [cursor=pointer]:
+                                  - text: 
+                                  - generic [ref=e214] [cursor=pointer]: Action
+                                  - text:    
+                            - rowgroup [ref=e215]:
+                              - row "Press SPACE to select this row." [ref=e216]:
+                                - gridcell "concentration" [ref=e217]
+                                - gridcell "pacemaker" [ref=e218]
+                                - gridcell [ref=e219]
+                                - gridcell [ref=e220]:
+                                  - generic [ref=e221]:
+                                    - button "Edit CheckList" [ref=e222] [cursor=pointer]:
+                                      - img [ref=e224] [cursor=pointer]: edit
+                                    - button "Delete CheckList" [ref=e225] [cursor=pointer]:
+                                      - img [ref=e227] [cursor=pointer]: delete
+                                    - button "Duplicate Material" [ref=e228] [cursor=pointer]:
+                                      - img [ref=e230] [cursor=pointer]: file_copy
+                              - row "Press SPACE to select this row." [ref=e231]:
+                                - gridcell "footrest" [ref=e232]
+                                - gridcell "impostor" [ref=e233]
+                                - gridcell [ref=e234]
+                                - gridcell [ref=e235]:
+                                  - generic [ref=e236]:
+                                    - button "Edit CheckList" [ref=e237] [cursor=pointer]:
+                                      - img [ref=e239] [cursor=pointer]: edit
+                                    - button "Delete CheckList" [ref=e240] [cursor=pointer]:
+                                      - img [ref=e242] [cursor=pointer]: delete
+                                    - button "Duplicate Material" [ref=e243] [cursor=pointer]:
+                                      - img [ref=e245] [cursor=pointer]: file_copy
+                              - row "Press SPACE to select this row." [ref=e246]:
+                                - gridcell "cutover" [ref=e247]
+                                - gridcell "blossom" [ref=e248]
+                                - gridcell [ref=e249]
+                                - gridcell [ref=e250]:
+                                  - generic [ref=e251]:
+                                    - button "Edit CheckList" [ref=e252] [cursor=pointer]:
+                                      - img [ref=e254] [cursor=pointer]: edit
+                                    - button "Delete CheckList" [ref=e255] [cursor=pointer]:
+                                      - img [ref=e257] [cursor=pointer]: delete
+                                    - button "Duplicate Material" [ref=e258] [cursor=pointer]:
+                                      - img [ref=e260] [cursor=pointer]: file_copy
+                              - row "Press SPACE to select this row." [ref=e261]:
+                                - gridcell "rim" [ref=e262]
+                                - gridcell "junior" [ref=e263]
+                                - gridcell [ref=e264]
+                                - gridcell [ref=e265]:
+                                  - generic [ref=e266]:
+                                    - button "Edit CheckList" [ref=e267] [cursor=pointer]:
+                                      - img [ref=e269] [cursor=pointer]: edit
+                                    - button "Delete CheckList" [ref=e270] [cursor=pointer]:
+                                      - img [ref=e272] [cursor=pointer]: delete
+                                    - button "Duplicate Material" [ref=e273] [cursor=pointer]:
+                                      - img [ref=e275] [cursor=pointer]: file_copy
+                              - row "Press SPACE to select this row." [ref=e276]:
+                                - gridcell "discourse" [ref=e277]
+                                - gridcell "flu" [ref=e278]
+                                - gridcell [ref=e279]
+                                - gridcell [ref=e280]:
+                                  - generic [ref=e281]:
+                                    - button "Edit CheckList" [ref=e282] [cursor=pointer]:
+                                      - img [ref=e284] [cursor=pointer]: edit
+                                    - button "Delete CheckList" [ref=e285] [cursor=pointer]:
+                                      - img [ref=e287] [cursor=pointer]: delete
+                                    - button "Duplicate Material" [ref=e288] [cursor=pointer]:
+                                      - img [ref=e290] [cursor=pointer]: file_copy
+                              - row "Press SPACE to select this row." [ref=e291]:
+                                - gridcell "porter" [ref=e292]
+                                - gridcell "insolence" [ref=e293]
+                                - gridcell [ref=e294]
+                                - gridcell [ref=e295]:
+                                  - generic [ref=e296]:
+                                    - button "Edit CheckList" [ref=e297] [cursor=pointer]:
+                                      - img [ref=e299] [cursor=pointer]: edit
+                                    - button "Delete CheckList" [ref=e300] [cursor=pointer]:
+                                      - img [ref=e302] [cursor=pointer]: delete
+                                    - button "Duplicate Material" [ref=e303] [cursor=pointer]:
+                                      - img [ref=e305] [cursor=pointer]: file_copy
+                              - row "Press SPACE to select this row." [ref=e306]:
+                                - gridcell "alert" [ref=e307]
+                                - gridcell "accompanist" [ref=e308]
+                                - gridcell [ref=e309]
+                                - gridcell [ref=e310]:
+                                  - generic [ref=e311]:
+                                    - button "Edit CheckList" [ref=e312] [cursor=pointer]:
+                                      - img [ref=e314] [cursor=pointer]: edit
+                                    - button "Delete CheckList" [ref=e315] [cursor=pointer]:
+                                      - img [ref=e317] [cursor=pointer]: delete
+                                    - button "Duplicate Material" [ref=e318] [cursor=pointer]:
+                                      - img [ref=e320] [cursor=pointer]: file_copy
+                              - row "Press SPACE to select this row." [ref=e321]:
+                                - gridcell "dusk" [ref=e322]
+                                - gridcell "captain" [ref=e323]
+                                - gridcell [ref=e324]
+                                - gridcell [ref=e325]:
+                                  - generic [ref=e326]:
+                                    - button "Edit CheckList" [ref=e327] [cursor=pointer]:
+                                      - img [ref=e329] [cursor=pointer]: edit
+                                    - button "Delete CheckList" [ref=e330] [cursor=pointer]:
+                                      - img [ref=e332] [cursor=pointer]: delete
+                                    - button "Duplicate Material" [ref=e333] [cursor=pointer]:
+                                      - img [ref=e335] [cursor=pointer]: file_copy
+                              - row "Press SPACE to select this row." [ref=e336]:
+                                - gridcell "climb" [ref=e337]
+                                - gridcell "baritone" [ref=e338]
+                                - gridcell [ref=e339]
+                                - gridcell [ref=e340]:
+                                  - generic [ref=e341]:
+                                    - button "Edit CheckList" [ref=e342] [cursor=pointer]:
+                                      - img [ref=e344] [cursor=pointer]: edit
+                                    - button "Delete CheckList" [ref=e345] [cursor=pointer]:
+                                      - img [ref=e347] [cursor=pointer]: delete
+                                    - button "Duplicate Material" [ref=e348] [cursor=pointer]:
+                                      - img [ref=e350] [cursor=pointer]: file_copy
+                              - row "Press SPACE to select this row." [ref=e351]:
+                                - gridcell "goat" [ref=e352]
+                                - gridcell "jump" [ref=e353]
+                                - gridcell [ref=e354]
+                                - gridcell [ref=e355]:
+                                  - generic [ref=e356]:
+                                    - button "Edit CheckList" [ref=e357] [cursor=pointer]:
+                                      - img [ref=e359] [cursor=pointer]: edit
+                                    - button "Delete CheckList" [ref=e360] [cursor=pointer]:
+                                      - img [ref=e362] [cursor=pointer]: delete
+                                    - button "Duplicate Material" [ref=e363] [cursor=pointer]:
+                                      - img [ref=e365] [cursor=pointer]: file_copy
+                          - generic [ref=e366]:
+                            - generic [ref=e367]:
+                              - generic [ref=e368]: "1"
+                              - generic [ref=e369]: to
+                              - generic [ref=e370]: "10"
+                              - generic [ref=e371]: of
+                              - generic [ref=e372]: "45"
+                            - button "First Page" [disabled] [ref=e373]: 
+                            - button "Previous Page" [disabled] [ref=e374]: 
+                            - generic [ref=e375]:
+                              - generic [ref=e376]: Page
+                              - generic [ref=e377]: "1"
+                              - generic [ref=e378]: of
+                              - generic [ref=e379]: "5"
+                            - button "Next Page" [ref=e380] [cursor=pointer]: 
+                            - button "Last Page" [ref=e381] [cursor=pointer]: 
+    - dialog "Add CheckList " [ref=e386]:
+      - generic [ref=e388]:
+        - heading "Add CheckList" [level=1] [ref=e389]
+        - button "" [ref=e390] [cursor=pointer]:
+          - generic [ref=e392] [cursor=pointer]: 
+      - generic [ref=e396]:
+        - generic [ref=e400]:
+          - textbox "Checklist Name" [ref=e401]: battle
+          - generic:
+            - generic:
+              - generic: Checklist Name
+              - generic: "*"
+        - generic [ref=e405] [cursor=pointer]:
+          - combobox "Checklist Type fun" [ref=e406] [cursor=pointer]:
+            - generic [ref=e410] [cursor=pointer]: fun
+          - generic:
+            - generic:
+              - generic: Checklist Type
+              - generic: "*"
+        - generic [ref=e416] [cursor=pointer]:
+          - combobox [ref=e417] [cursor=pointer]:
+            - generic [ref=e421] [cursor=pointer]: Machine-297, M-827, Machine 9, M-530, Machine-811, Machine-713, Machine-334, Machine-679, Machine-381, Machine-935, Machine-208, Machine-349, Machine-538, Machine-730, Machine-735, Machine-716, Machine-553, Machine-618, Machine-878, Machine-552, Machine-623, M-995, M-792, M-684, M-514, Machine-219, Machine-683, Machine-913, Machine-878, Machine-820, Machine-816, Machine-327, Machine-787, Machine-296, Machine-104, Machine-321, Machine-934, Machine-657, Machine-118, Machine-457, Machine-501, Machine-231, Machine-163, M-480, M-553, M-410, M-359, Machine-509, Machine-914, Machine-438, Machine-754, Machine-935, Machine-930, Machine-976, Machine-898, Machine-128, Machine-568, Machine-224, Machine-320, Machine-879, Machine-467, Machine-981, Machine-474, Machine-879, Machine-825, Machine-885, Machine-326, M-744, M-181, M-283, M-199, M-105, M-977, Machine-475, Machine-384, Machine-564, Machine-583, Machine-315, Machine-770, Machine-230, Machine-162, Machine-185, Machine-201, Machine-852, Machine-928, Machine-774, Machine-884, Machine-826, M-318, Machine-31, M-903, M-457, M-915, Machine-300, Machine-360, Machine-153, M-284, M-845, M-936, Machine-878, Machine-722, Machine-184, Machine-194, Machine-123, Machine-178, Machine-681, Machine-138, Machine-552, Machine-321, Machine-346, Machine-352, Machine-434, Machine-610, Machine-660, Machine-126, M-737, M-947, M-234, Machine-212, M-828, M-840, M-365, Machine-268, Machine-196, Machine-741, Machine-234, Machine-862, Machine-702, Machine-891, Machine-896, Machine-509, Machine-809, Machine-135, Machine-808, Machine-857, Machine-103, Machine-996, Machine-227, Machine-739, Machine-439, Machine-756, Machine-940, Machine-340, Machine-289, Machine-528, Machine-767, Machine-624, Machine-434, Machine-635, Machine-247, Machine-495-updated, M-821, M-131, M-206, M-417, Machine-751, Machine-642, Machine-632, Machine-207, Machine-266, Machine-128, Machine-249, Machine-873, Machine-131, M-835, Machine-681, M-143, M-930, M-565, M-446, Machine-640, Machine-388, Machine-545, Machine-765, Machine-338, Machine-269, Machine-555, Machine-851, Machine-702, Machine-674, Machine-659, Machine-306, Machine-653, Machine-158, Machine-383, Machine-636, Machine-839, Machine-805, Machine-583, Machine-453, Machine-657, Machine-749, Machine-990, Machine-853, Machine-945, Machine-697, Machine-421, Machine-742, Machine-431, Machine-228, Machine-542, Machine-929, Machine-460, Machine-152, sdv, Machine-712, M-299, M-967, M-125, M-783, M-395, M-517, M-900, M-363, M-381, M-535, M-448, M-233, M-266, M-144, M-533, M-945, M-190, M-308, M-103, M-784, M-611, M-255, M-962, M-891, M-697, M-789, M-232, M-493, M-943, M-832, M-834, M-671, M-632, M-844, M-825, M-429, M-637, M-353, M-303, M-471, M-624, M-212, M-337, M-302, M-843, M-307, M-837, machine test, rgfe, M-385, M-527, M-548, M-22, Machine-00S
+          - generic:
+            - generic:
+              - generic: Select Units
+        - generic [ref=e424]:
+          - button [ref=e425] [cursor=pointer]:
+            - img [ref=e427] [cursor=pointer]: refresh
+          - button "" [ref=e428] [cursor=pointer]:
+            - generic [ref=e430] [cursor=pointer]: 
+          - button "" [ref=e431] [cursor=pointer]:
+            - generic [ref=e433] [cursor=pointer]: 
+      - separator [ref=e434]
+      - generic [ref=e435]:
+        - table [ref=e436]:
+          - rowgroup [ref=e437]:
+            - row "Action Items Group Name ItemType Standard Min Max Good Image Bad Image" [ref=e438]:
+              - columnheader "Action" [ref=e439]:
+                - paragraph [ref=e440]: Action
+              - columnheader "Items" [ref=e441]:
+                - button "Items" [ref=e442] [cursor=pointer]:
+                  - paragraph [ref=e444] [cursor=pointer]: Items
+              - columnheader "Group Name" [ref=e451]:
+                - button "Group Name" [ref=e452] [cursor=pointer]:
+                  - paragraph [ref=e454] [cursor=pointer]: Group Name
+              - columnheader "ItemType" [ref=e461]:
+                - button "ItemType" [ref=e462] [cursor=pointer]:
+                  - paragraph [ref=e464] [cursor=pointer]: ItemType
+              - columnheader "Standard" [ref=e471]:
+                - button "Standard" [ref=e472] [cursor=pointer]:
+                  - paragraph [ref=e474] [cursor=pointer]: Standard
+              - columnheader "Min" [ref=e481]:
+                - button "Min" [ref=e482] [cursor=pointer]:
+                  - paragraph [ref=e484] [cursor=pointer]: Min
+              - columnheader "Max" [ref=e491]:
+                - button "Max" [ref=e492] [cursor=pointer]:
+                  - paragraph [ref=e494] [cursor=pointer]: Max
+              - columnheader "Good Image" [ref=e501]:
+                - button "Good Image" [ref=e502] [cursor=pointer]:
+                  - paragraph [ref=e504] [cursor=pointer]: Good Image
+              - columnheader "Bad Image" [ref=e511]:
+                - button "Bad Image" [ref=e512] [cursor=pointer]:
+                  - paragraph [ref=e514] [cursor=pointer]: Bad Image
+          - rowgroup [ref=e521]:
+            - row "View Row Tree petal secrecy Value riser Choose File o3ozone.png Add Files Choose File image2.png Add Files" [ref=e522]:
+              - cell "View Row Tree" [ref=e523]:
+                - button "View Row Tree" [ref=e525] [cursor=pointer]:
+                  - img [ref=e527] [cursor=pointer]
+              - cell "petal" [ref=e531]:
+                - textbox "Item" [ref=e532]: petal
+              - cell "secrecy" [ref=e533]:
+                - combobox "secrecy" [ref=e534]:
+                  - generic [ref=e538] [cursor=pointer]: secrecy
+              - cell "Value" [ref=e541]:
+                - combobox "Value" [ref=e542]:
+                  - generic [ref=e546] [cursor=pointer]: Value
+              - cell "riser" [ref=e549]:
+                - textbox "Add Text" [ref=e550]: riser
+              - cell [ref=e551]:
+                - spinbutton [ref=e552]: "10"
+              - cell [ref=e553]:
+                - spinbutton [ref=e554]: "100"
+              - cell "Choose File o3ozone.png Add Files" [ref=e555]:
+                - generic [ref=e560]:
+                  - generic [ref=e561] [cursor=pointer]:
+                    - button "Choose File"
+                  - generic:
+                    - generic:
+                      - generic: Add Files
+              - cell "Choose File image2.png Add Files" [ref=e563]:
+                - generic [ref=e568]:
+                  - generic [ref=e569] [cursor=pointer]:
+                    - button "Choose File"
+                  - generic:
+                    - generic:
+                      - generic: Add Files
+        - group [ref=e571]:
+          - generic [ref=e574]:
+            - generic [ref=e575]: 1 – 1 of 1
+            - button "First page" [disabled] [ref=e576]:
+              - img [ref=e578]
+            - button "Previous page" [disabled] [ref=e580]:
+              - img [ref=e582]
+            - button "Next page" [disabled] [ref=e584]:
+              - img [ref=e586]
+            - button "Last page" [disabled] [ref=e588]:
+              - img [ref=e590]
+        - button "" [active] [ref=e593] [cursor=pointer]:
+          - generic [ref=e595] [cursor=pointer]: 
+```
