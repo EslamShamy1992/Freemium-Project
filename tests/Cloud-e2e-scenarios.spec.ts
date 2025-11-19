@@ -124,9 +124,35 @@ let preferredDataType: string;
 
     
       });
+
+      test('verify get the plant license key ', async ({ page }) => {  
+       await loginpage.login_with_valid_account(companyAdminUsername,companyAdminPassword);
+       const licenseKey = await plantsPage.getLicenseKey();
+       expect(licenseKey).not.toBeNull();
+       expect(licenseKey?.trim().length).toBeGreaterThan(0);
+       console.log('License Key:', licenseKey);
+
+      });
+
+
+
+      test('verify bulk upload functionality for master data creation', async ({ page, context }) => {  
+        await loginpage.login_with_valid_account(companyAdminUsername,companyAdminPassword)
+        await plantsPage.clickOnUploadMasterData();
+        await plantsPage.uploadFile('Master_Data_Bulk_Upload.xlsm');
+        await expect(page.getByText('Master_Data_Bulk_Upload.xlsm')).toBeVisible();
+        const newTab = await plantsPage.syncDownOnEdge(context);
+         expect(newTab.url()).toBe('http://localhost:4200/login');
+         await expect(newTab.getByText('Login').last()).toBeVisible(); 
+    
+        });
+
+
+
+
   test("should create all master data successfully", async ({ page }) => {
 
-    await loginpage.login_with_valid_account(companyAdminUsername,companyAdminPassword)
+      await loginpage.login_with_valid_account(companyAdminUsername,companyAdminPassword)
     await plantsPage.openManulSetup();
     await machineDetails.addMachineDetails(departmentName, machineName);
     console.log('Machine Details Added:', departmentName, machineName);
@@ -169,10 +195,11 @@ let preferredDataType: string;
     await expect(page.getByText(goodImagePath)).toBeVisible();
     await expect(page.getByText(badImagePath)).toBeVisible();
     await checklistConfig.saveChecklist();
-     console.log(` Checklist Name: ${checklistNameInput} Checklist Type: ${checklisttype} Group: ${groupName} Item: ${itemName}Text: ${addtext}`);
+    console.log(` Checklist Name: ${checklistNameInput} Checklist Type: ${checklisttype} Group: ${groupName} Item: ${itemName}Text: ${addtext}`);
     await expect(page.getByText('CheckList Added Successfuly')).toBeVisible();
  
 
-
 });
+
+
 })

@@ -1,0 +1,81 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - button "Mobile menu opener" [ref=e8] [cursor=pointer]:
+        - img [ref=e10] [cursor=pointer]
+      - navigation [ref=e14]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - img "User Journey Plants" [ref=e20] [cursor=pointer]
+    - generic [ref=e21]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - generic:
+            - img "O3OZONE"
+          - generic [ref=e25]:
+            - button [ref=e26] [cursor=pointer]:
+              - img [ref=e28] [cursor=pointer]
+            - combobox "NavbarSearchPlaceHolder" [ref=e30]
+        - generic [ref=e31]:
+          - generic [ref=e36]:
+            - textbox "Group" [ref=e37]: o3
+            - generic:
+              - generic:
+                - generic: Group
+          - button [ref=e38] [cursor=pointer]:
+            - img [ref=e40] [cursor=pointer]
+          - button "Profile" [ref=e42] [cursor=pointer]:
+            - generic [ref=e46] [cursor=pointer]: SS
+      - generic [ref=e47]:
+        - generic:
+          - generic [ref=e48]:
+            - generic:
+              - img
+          - generic [ref=e49]:
+            - generic:
+              - img
+        - generic [ref=e50]:
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - button "Skip" [ref=e54] [cursor=pointer]:
+                - text: Skip
+                - img [ref=e55] [cursor=pointer]: arrow_forward
+              - button "Skip All" [ref=e56] [cursor=pointer]:
+                - text: Skip All
+                - img [ref=e57] [cursor=pointer]: close
+            - heading "Welcome, ss sh!" [level=1] [ref=e58]
+            - paragraph [ref=e59]: You're ready to get started with your freemium account
+          - generic [ref=e61]:
+            - generic [ref=e62] [cursor=pointer]:
+              - generic [ref=e63] [cursor=pointer]:
+                - generic [ref=e64] [cursor=pointer]: "1"
+                - heading "Download Installer" [level=3] [ref=e65] [cursor=pointer]
+              - paragraph [ref=e66] [cursor=pointer]: Get the application installer to begin your setup
+              - button "Start Here - Download Now" [ref=e67] [cursor=pointer]:
+                - img [ref=e68] [cursor=pointer]: download
+                - text: Start Here - Download Now
+            - generic:
+              - generic:
+                - generic: "2"
+                - heading "Generate License Key" [level=3]
+              - paragraph: Create your unique license key for activation
+              - button "Generate Key" [disabled]:
+                - img: vpn_key
+                - text: Generate Key
+            - generic:
+              - generic:
+                - generic: "3"
+                - heading "Install & Activate" [level=3]
+              - paragraph: Run the installer and activate it using your license key.
+              - paragraph: The I’ve Completed Setup button will become available once the installation is finished. Alternatively, you can skip this step and explore other items by clicking the Skip button.
+              - button "I've Completed Setup" [disabled]:
+                - img: rocket_launch
+                - text: I've Completed Setup
+              - button "Skip":
+                - img: arrow_forward
+                - text: Skip
+  - img
+```
