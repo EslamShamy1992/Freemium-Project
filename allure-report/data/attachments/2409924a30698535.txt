@@ -1,0 +1,8 @@
+Checklist Config Added:
+   Checklist Name: partridge
+   Checklist Type: bob
+   Group: jury
+   Item: cook
+   Text: derby
+   Min Value: 10
+   Max Value: 100

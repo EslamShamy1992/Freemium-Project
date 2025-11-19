@@ -29,4 +29,10 @@ export class LoginPage extends BasePages {
 
     }
 
-}
+    async login_with_invalid_account(username:string,pass:string){
+
+        await this.username.fill(username);
+        await this.password.fill(pass);
+        await this.loginButton.click()      
+
+}}

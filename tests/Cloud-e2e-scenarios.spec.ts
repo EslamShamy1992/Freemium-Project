@@ -18,6 +18,7 @@ config();
 
 
 test.describe("End-to-End Flow", () => { 
+ test.use({ storageState:{cookies: [], origins: []} });
  let loginpage:LoginPage;
 let companyAdminUsername:string,
 companyAdminPassword:string;
@@ -85,7 +86,7 @@ let preferredDataType: string;
         checklistConfig = new ChecklistConfig(page);
         companyAdminUsername=process.env.CompanyAdminUsername as string
         companyAdminPassword= process.env.CompanyAdminPassword as string
-       await page.goto('/userjourneyplants');
+       await page.goto('/login');
         departmentName = faker.commerce.department();
         machineName = `M-${faker.number.int({ min: 100, max: 999 })}`;
         Parameter = `Param-${faker.word.noun()}`;
@@ -125,7 +126,7 @@ let preferredDataType: string;
       });
   test("should create all master data successfully", async ({ page }) => {
 
-    // await loginpage.login_with_valid_account(companyAdminUsername,companyAdminPassword)
+    await loginpage.login_with_valid_account(companyAdminUsername,companyAdminPassword)
     await plantsPage.openManulSetup();
     await machineDetails.addMachineDetails(departmentName, machineName);
     console.log('Machine Details Added:', departmentName, machineName);

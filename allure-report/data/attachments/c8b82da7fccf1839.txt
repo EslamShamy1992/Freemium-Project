@@ -1,0 +1,16 @@
+Company Data: {
+  companyName: 'Hoppe - Leannon',
+  companyCr: 'CR862762',
+  companyFirst: 'Aubrey',
+  companyLast: 'Hagenes',
+  companyEmail: 'Aubrey.Hagenes56@hotmail.com',
+  companyPhone: '539866214'
+}
+Plant Data: {
+  plantName: 'Rempel - Morissette',
+  plantCr: 'CRA514732',
+  plantFirst: 'Candace',
+  plantLast: 'Armstrong',
+  plantEmail: 'Candace.Armstrong58@hotmail.com',
+  plantPhone: '591040584'
+}

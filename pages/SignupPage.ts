@@ -51,6 +51,7 @@ export class SignupPage extends BasePages {
   }
 
   async fillPlantInfo(plantName: string, plantCr: string, firstName: string, lastName: string, email: string, phone: string) {
+    await this.plantName.scrollIntoViewIfNeeded();
     await this.plantName.fill(plantName);
     await this.plantCrNumber.fill(plantCr);
     await this.plantFirstName.fill(firstName);
@@ -65,10 +66,16 @@ export class SignupPage extends BasePages {
   }
 
   async assertSignupSuccess() {
-    await expect(this.confirmationMessage).toBeVisible({ timeout: 100000 });
-    await this.page.waitForTimeout(2000);
+    await expect(this.confirmationMessage).toBeVisible();
+    await this.page.waitForTimeout(1000);
     await this.okBtn.click();
   }
+
+
+  async signupWithMissingRequiredFields() {
+    await this.reviewBtn.click();
+  }
+
 }
 
 

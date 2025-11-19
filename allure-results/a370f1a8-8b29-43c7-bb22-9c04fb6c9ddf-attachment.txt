@@ -1,0 +1,2 @@
+Machine Details Added: Automotive Machine-230
+Waste Config Added: Machine-230 Waste AGLeO godfather [ 'integer', 'tennis', 'jellyfish', 'begonia' ]

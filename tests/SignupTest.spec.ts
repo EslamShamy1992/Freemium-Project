@@ -27,13 +27,13 @@ test.describe("Signup TestCases", () => {
     companyCr = `CR${faker.number.int({ min: 100000, max: 999999 })}`;
     companyFirst = faker.person.firstName();
     companyLast = faker.person.lastName();
-    companyEmail = faker.internet.email({ firstName: companyFirst, lastName: companyLast, provider: 'yopmail.com' });
+    companyEmail = faker.internet.email({ firstName: companyFirst, lastName: companyLast, provider: 'hotmail.com' });
     companyPhone = `5${faker.number.int({ min: 10000000, max: 99999999 })}`;
     plantName = faker.company.name();
     plantCr = `CRA${faker.number.int({ min: 100000, max: 999999 })}`;
     plantFirst = faker.person.firstName();
     plantLast = faker.person.lastName();
-    plantEmail = faker.internet.email({ firstName: plantFirst, lastName: plantLast, provider: 'yopmail.com' });
+    plantEmail = faker.internet.email({ firstName: plantFirst, lastName: plantLast, provider: 'hotmail.com' });
     plantPhone = `5${faker.number.int({ min: 10000000, max: 99999999 })}`;
   });
 
@@ -47,7 +47,31 @@ test.describe("Signup TestCases", () => {
     console.log("Plant Data:", { plantName, plantCr, plantFirst, plantLast, plantEmail, plantPhone });
  
   });
+
+  test("verify Signup with missing required fields Plant Info", async ({ page }) => {
+
+    await signupPage.fillCompanyInfo(companyName, companyCr, companyFirst, companyLast, companyEmail, companyPhone);
+    await signupPage.signupWithMissingRequiredFields();
+    await page.getByText('Admin first name is required').isVisible();
+    await page.getByText('Admin last name is required').isVisible();
+    await page.getByText('Admin email is required').isVisible();
+    await page.getByText('Admin phone number is required').isVisible();
+    await page.getByText('Plant name is required').isVisible();
+    await page.getByText('CR number is required').isVisible();
+
+
 });
+  test("verify Signup with missing required fields Company Info", async ({ page }) => {
 
+    await signupPage.fillPlantInfo(plantName, plantCr, plantFirst, plantLast, plantEmail, plantPhone);
+    await signupPage.signupWithMissingRequiredFields();
+    await page.getByText('Group name is required').isVisible();
+    await page.getByText('CR number is required').isVisible();
+    await page.getByText('First name is required').isVisible();
+    await page.getByText('Last name is required').isVisible();
+    await page.getByText('Company email is required').isVisible();
+    await page.getByText('phone number is required').isVisible();
 
+});
+});
 

@@ -1,8 +1,0 @@
-Checklist Config Added:
-   Checklist Name: intellect
-   Checklist Type: contractor
-   Group: saloon
-   Item: sonnet
-   Text: e-mail
-   Min Value: 10
-   Max Value: 100

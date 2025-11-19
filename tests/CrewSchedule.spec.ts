@@ -37,8 +37,6 @@ test('verify update CrewSchedule ', async ({page}) => {
   await plantsPage.openManulSetup()
   await crewSchedule.addCrewSchedule(shift);  
   console.log('Crew Schedule Added:',shift);
-     await crewSchedule.deleteCrewSchedule();
-
   await crewSchedule.updateCrewSchedule(updatedShift);
   console.log('Crew Schedule Updated:',updatedShift);
   await expect(page.getByText('Shift and crew schedule updated')).toBeVisible();
