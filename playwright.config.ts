@@ -39,9 +39,9 @@ export default defineConfig({
   use: {
      /*Base URL to use in actions like `await page.goto('/Signup')`. */
     baseURL: 'https://mes-lite.o3ozone.ai/',
-    // headless: process.env.CI ? true : false,
+    headless: process.env.CI ? true : false,
     storageState: "auth.json",
-    headless: false,
+    // headless: false,
 
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
@@ -53,7 +53,7 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] ,
-      //  headless: process.env.CI ? true : false,
+       headless: process.env.CI ? true : false,
 
       },
     },
