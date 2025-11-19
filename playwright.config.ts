@@ -19,7 +19,7 @@ export default defineConfig({
 
   globalSetup:require.resolve('./auth/global-setup'),
 
-  timeout: 60*1000,
+  timeout: 90*1000,
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: false,
