@@ -17,7 +17,7 @@ dotenv.config({ path: `.env.${process.env.NODE_ENV || 'dev'}` });
  */
 export default defineConfig({ 
 
-  // globalSetup:require.resolve('./auth/global-setup'),
+  globalSetup:require.resolve('./auth/global-setup'),
 
   timeout: 90*10000,
   testDir: './tests',
