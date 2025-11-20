@@ -1,2 +1,0 @@
-Machine Details Added: Tools Machine-396
-Waste Config Added: Machine-396 Waste 9kcKd underpants [ 'quinoa', 'scrap', 'descent', 'quit' ]

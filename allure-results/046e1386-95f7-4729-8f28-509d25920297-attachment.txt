@@ -1,8 +1,0 @@
-Checklist Config Added:
-   Checklist Name: doorpost
-   Checklist Type: quit
-   Group: hubris
-   Item: brochure
-   Text: octave
-   Min Value: 10
-   Max Value: 100

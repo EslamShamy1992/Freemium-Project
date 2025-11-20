@@ -1,2 +1,0 @@
-Machine Details Added: Tools Machine-655
-Waste Config Added: Machine-655 Waste hdmHJ bandwidth [ 'mechanic', 'puppet', 'government', 'toaster' ]

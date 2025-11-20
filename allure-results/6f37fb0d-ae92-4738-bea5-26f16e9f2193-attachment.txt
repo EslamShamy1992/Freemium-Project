@@ -1,2 +1,0 @@
-Machine Details Added: Tools Machine-433
-Machine Parameter Added: Machine-433 noon 48 Int

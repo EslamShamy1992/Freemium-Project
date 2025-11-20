@@ -1,8 +1,0 @@
-Machine Details Added: Home Machine-233
-Waste Config Added: Machine-233 Waste E4pjN scale [ 'density', 'squid', 'platter', 'pigpen' ]
-Waste Config Updated: Updated Waste E4pjN-updated scale-updated [
-  'density-updated',
-  'squid-updated',
-  'platter-updated',
-  'pigpen-updated'
-]

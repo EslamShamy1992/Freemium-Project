@@ -1,0 +1,8 @@
+Checklist Config Added:
+   Checklist Name: middle
+   Checklist Type: monasticism
+   Group: amendment
+   Item: convection
+   Text: government
+   Min Value: 10
+   Max Value: 100

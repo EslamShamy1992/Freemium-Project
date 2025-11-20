@@ -1,0 +1,192 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - button [ref=e8] [cursor=pointer]:
+        - img [ref=e10] [cursor=pointer]
+      - navigation [ref=e14]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - img [ref=e20] [cursor=pointer]
+    - generic [ref=e21]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e27]:
+            - button [ref=e28] [cursor=pointer]:
+              - img [ref=e30] [cursor=pointer]
+            - combobox [ref=e32]
+        - generic [ref=e33]:
+          - generic [ref=e38]:
+            - textbox [ref=e39]: o3
+            - generic:
+              - generic:
+                - generic: Group
+          - button [ref=e40] [cursor=pointer]:
+            - img [ref=e42] [cursor=pointer]
+          - button [ref=e44] [cursor=pointer]:
+            - generic [ref=e48] [cursor=pointer]: SS
+      - generic [ref=e50]:
+        - heading [level=1] [ref=e51]: User Plants
+        - generic [ref=e53] [cursor=pointer]:
+          - generic [ref=e54] [cursor=pointer]:
+            - generic [ref=e55] [cursor=pointer]:
+              - img [ref=e56] [cursor=pointer]: apartment
+              - heading [level=2] [ref=e57] [cursor=pointer]: O3Plant
+            - paragraph [ref=e58] [cursor=pointer]: o3
+          - generic [ref=e59] [cursor=pointer]:
+            - generic [ref=e60] [cursor=pointer]:
+              - generic [ref=e61] [cursor=pointer]: "CR Number:"
+              - generic [ref=e62] [cursor=pointer]: Cr001
+            - generic [ref=e63] [cursor=pointer]:
+              - generic [ref=e64] [cursor=pointer]: "License Status:"
+              - generic [ref=e65] [cursor=pointer]:
+                - img [ref=e66] [cursor=pointer]: check_circle
+                - text: Active
+            - generic [ref=e67] [cursor=pointer]:
+              - generic [ref=e68] [cursor=pointer]: "Data Config:"
+              - generic [ref=e69] [cursor=pointer]: Configured
+            - generic [ref=e70] [cursor=pointer]:
+              - generic [ref=e71] [cursor=pointer]: "Data Sync Frequency:"
+              - generic [ref=e72] [cursor=pointer]: Every 1 Day(s)
+            - generic [ref=e73] [cursor=pointer]:
+              - generic [ref=e74] [cursor=pointer]: "Data Limit:"
+              - generic [ref=e75] [cursor=pointer]: 300 GB/Month
+            - generic [ref=e77] [cursor=pointer]: "Last Sync:"
+          - generic [ref=e78] [cursor=pointer]:
+            - button [ref=e79] [cursor=pointer]:
+              - generic [ref=e80] [cursor=pointer]:
+                - img [ref=e81] [cursor=pointer]: download
+                - text: Download Freemium Installer
+            - generic [ref=e82] [cursor=pointer]:
+              - button [ref=e83] [cursor=pointer]:
+                - generic [ref=e84] [cursor=pointer]:
+                  - img [ref=e85] [cursor=pointer]: vpn_key
+                  - text: License Key
+              - button [ref=e86] [cursor=pointer]:
+                - generic [ref=e87] [cursor=pointer]:
+                  - img [ref=e88] [cursor=pointer]: upload
+                  - text: Upload Master Data
+  - dialog [active] [ref=e92]:
+    - generic [ref=e93]:
+      - generic [ref=e95]:
+        - heading "Upload Master Data" [level=2] [ref=e96]
+        - button "close" [ref=e97] [cursor=pointer]:
+          - img [ref=e99] [cursor=pointer]: close
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - heading "Manual Setup" [level=3] [ref=e106] [cursor=pointer]
+          - heading "Bulk Upload" [level=3] [ref=e108] [cursor=pointer]
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - button [ref=e113] [cursor=pointer]
+            - tablist [ref=e116]:
+              - generic [ref=e117]:
+                - tab "Machine Details" [ref=e118] [cursor=pointer]:
+                  - generic [ref=e119] [cursor=pointer]:
+                    - img [ref=e120] [cursor=pointer]: precision_manufacturing
+                    - text: Machine Details
+                - tab "Machine Parameters" [ref=e121] [cursor=pointer]:
+                  - generic [ref=e122] [cursor=pointer]:
+                    - img [ref=e123] [cursor=pointer]: tune
+                    - text: Machine Parameters
+                - tab "Product Configuration" [ref=e124] [cursor=pointer]:
+                  - generic [ref=e125] [cursor=pointer]:
+                    - img [ref=e126] [cursor=pointer]: inventory_2
+                    - text: Product Configuration
+                - tab "Downtime Configuration" [ref=e127] [cursor=pointer]:
+                  - generic [ref=e128] [cursor=pointer]:
+                    - img [ref=e129] [cursor=pointer]: timer_off
+                    - text: Downtime Configuration
+                - tab "Waste Configuration" [ref=e130] [cursor=pointer]:
+                  - generic [ref=e131] [cursor=pointer]:
+                    - img [ref=e132] [cursor=pointer]: delete
+                    - text: Waste Configuration
+                - tab "User Configuration" [ref=e133] [cursor=pointer]:
+                  - generic [ref=e134] [cursor=pointer]:
+                    - img [ref=e135] [cursor=pointer]: people
+                    - text: User Configuration
+                - tab "Crew Schedule" [ref=e136] [cursor=pointer]:
+                  - generic [ref=e137] [cursor=pointer]:
+                    - img [ref=e138] [cursor=pointer]: schedule
+                    - text: Crew Schedule
+                - tab "OEE Configuration" [ref=e139] [cursor=pointer]:
+                  - generic [ref=e140] [cursor=pointer]:
+                    - img [ref=e141] [cursor=pointer]: assessment
+                    - text: OEE Configuration
+                - tab "Parameter Specifications" [ref=e142] [cursor=pointer]:
+                  - generic [ref=e143] [cursor=pointer]:
+                    - img [ref=e144] [cursor=pointer]: settings_input_component
+                    - text: Parameter Specifications
+                - tab "CheckList Type" [ref=e145] [cursor=pointer]:
+                  - generic [ref=e146] [cursor=pointer]:
+                    - img [ref=e147] [cursor=pointer]: task_alt
+                    - text: CheckList Type
+                - tab "Checklist Configuration" [selected] [ref=e148] [cursor=pointer]:
+                  - generic [ref=e149] [cursor=pointer]:
+                    - img [ref=e150] [cursor=pointer]: checklist
+                    - text: Checklist Configuration
+            - button [disabled] [ref=e152]
+          - generic [ref=e154]:
+            - tabpanel "Machine Details" [ref=e155]
+            - tabpanel "Machine Parameters" [ref=e157]
+            - tabpanel "Product Configuration" [ref=e159]
+            - tabpanel "Downtime Configuration" [ref=e161]
+            - tabpanel "Waste Configuration" [ref=e163]
+            - tabpanel "User Configuration" [ref=e165]
+            - tabpanel "Crew Schedule" [ref=e167]
+            - tabpanel "OEE Configuration" [ref=e169]
+            - tabpanel "Parameter Specifications" [ref=e171]
+            - tabpanel "CheckList Type" [ref=e173]
+            - tabpanel "Checklist Configuration" [ref=e175]:
+              - generic [ref=e177]:
+                - generic [ref=e178]:
+                  - img [ref=e179]: checklist
+                  - heading "Checklist Configuration" [level=3] [ref=e180]
+                - generic [ref=e182]:
+                  - button "" [ref=e185] [cursor=pointer]:
+                    - generic [ref=e187] [cursor=pointer]: 
+                  - generic [ref=e190]:
+                    - generic:  
+                    - grid [ref=e192]:
+                      - rowgroup [ref=e193]:
+                        - row "CheckList Name Checklist Type Units Action" [ref=e194]:
+                          - columnheader "CheckList Name" [ref=e195] [cursor=pointer]:
+                            - text: 
+                            - generic [ref=e196] [cursor=pointer]: 
+                            - generic [ref=e197] [cursor=pointer]: CheckList Name
+                            - text:    
+                          - columnheader "Checklist Type" [ref=e198] [cursor=pointer]:
+                            - text: 
+                            - generic [ref=e199] [cursor=pointer]: 
+                            - generic [ref=e200] [cursor=pointer]: Checklist Type
+                            - text:    
+                          - columnheader "Units" [ref=e201] [cursor=pointer]:
+                            - text: 
+                            - generic [ref=e202] [cursor=pointer]: 
+                            - generic [ref=e203] [cursor=pointer]: Units
+                            - text:    
+                          - columnheader "Action" [ref=e204] [cursor=pointer]:
+                            - text: 
+                            - generic [ref=e205] [cursor=pointer]: Action
+                            - text:    
+                      - rowgroup [ref=e206]
+                    - generic [ref=e208]:
+                      - generic [ref=e209]:
+                        - generic [ref=e210]: "0"
+                        - generic [ref=e211]: to
+                        - generic [ref=e212]: "0"
+                        - generic [ref=e213]: of
+                        - generic [ref=e214]: "0"
+                      - button "First Page" [disabled] [ref=e215]: 
+                      - button "Previous Page" [disabled] [ref=e216]: 
+                      - generic [ref=e217]:
+                        - generic [ref=e218]: Page
+                        - generic [ref=e219]: "0"
+                        - generic [ref=e220]: of
+                        - generic [ref=e221]: "0"
+                      - button "Next Page" [disabled] [ref=e222]: 
+                      - button "Last Page" [disabled] [ref=e223]: 
+```
