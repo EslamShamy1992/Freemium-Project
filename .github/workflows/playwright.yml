@@ -26,7 +26,7 @@ jobs:
       run: npx playwright install chromium
 
     - name: Run Tests with Multiple Reporters
-      run: npx playwright test MachineParameter.spec.ts --reporter=list,html,allure-playwright
+      run: npx playwright test --reporter=list,html,allure-playwright
       env:
         CI: true
       continue-on-error: true
