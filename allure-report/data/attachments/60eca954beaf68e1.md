@@ -1,0 +1,1060 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - button [ref=e8] [cursor=pointer]:
+        - img [ref=e10] [cursor=pointer]
+      - navigation [ref=e14]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - img [ref=e20] [cursor=pointer]
+    - generic [ref=e21]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - img [ref=e26] [cursor=pointer]
+          - generic [ref=e27]:
+            - button [ref=e28] [cursor=pointer]:
+              - img [ref=e30] [cursor=pointer]
+            - combobox [ref=e32]
+        - generic [ref=e33]:
+          - generic [ref=e38]:
+            - textbox [ref=e39]: o3
+            - generic:
+              - generic:
+                - generic: Group
+          - button [ref=e40] [cursor=pointer]:
+            - img [ref=e42] [cursor=pointer]
+          - button [ref=e44] [cursor=pointer]:
+            - generic [ref=e48] [cursor=pointer]: SS
+      - generic [ref=e50]:
+        - heading [level=1] [ref=e51]: User Plants
+        - generic [ref=e53] [cursor=pointer]:
+          - generic [ref=e54] [cursor=pointer]:
+            - generic [ref=e55] [cursor=pointer]:
+              - img [ref=e56] [cursor=pointer]: apartment
+              - heading [level=2] [ref=e57] [cursor=pointer]: O3Plant
+            - paragraph [ref=e58] [cursor=pointer]: o3
+          - generic [ref=e59] [cursor=pointer]:
+            - generic [ref=e60] [cursor=pointer]:
+              - generic [ref=e61] [cursor=pointer]: "CR Number:"
+              - generic [ref=e62] [cursor=pointer]: Cr001
+            - generic [ref=e63] [cursor=pointer]:
+              - generic [ref=e64] [cursor=pointer]: "License Status:"
+              - generic [ref=e65] [cursor=pointer]:
+                - img [ref=e66] [cursor=pointer]: check_circle
+                - text: Active
+            - generic [ref=e67] [cursor=pointer]:
+              - generic [ref=e68] [cursor=pointer]: "Data Config:"
+              - generic [ref=e69] [cursor=pointer]: Configured
+            - generic [ref=e70] [cursor=pointer]:
+              - generic [ref=e71] [cursor=pointer]: "Data Sync Frequency:"
+              - generic [ref=e72] [cursor=pointer]: Every 1 Day(s)
+            - generic [ref=e73] [cursor=pointer]:
+              - generic [ref=e74] [cursor=pointer]: "Data Limit:"
+              - generic [ref=e75] [cursor=pointer]: 300 GB/Month
+            - generic [ref=e77] [cursor=pointer]: "Last Sync:"
+          - generic [ref=e78] [cursor=pointer]:
+            - button [ref=e79] [cursor=pointer]:
+              - generic [ref=e80] [cursor=pointer]:
+                - img [ref=e81] [cursor=pointer]: download
+                - text: Download Freemium Installer
+            - generic [ref=e82] [cursor=pointer]:
+              - button [ref=e83] [cursor=pointer]:
+                - generic [ref=e84] [cursor=pointer]:
+                  - img [ref=e85] [cursor=pointer]: vpn_key
+                  - text: License Key
+              - button [ref=e86] [cursor=pointer]:
+                - generic [ref=e87] [cursor=pointer]:
+                  - img [ref=e88] [cursor=pointer]: upload
+                  - text: Upload Master Data
+  - generic:
+    - dialog [ref=e92]:
+      - generic [ref=e93]:
+        - generic [ref=e95]:
+          - heading "Upload Master Data" [level=2] [ref=e96]
+          - button "close" [ref=e97] [cursor=pointer]:
+            - img [ref=e99] [cursor=pointer]: close
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - heading "Manual Setup" [level=3] [ref=e106] [cursor=pointer]
+            - heading "Bulk Upload" [level=3] [ref=e108] [cursor=pointer]
+          - generic [ref=e111]:
+            - generic [ref=e112]:
+              - button [disabled] [ref=e113]
+              - tablist [ref=e116]:
+                - generic [ref=e117]:
+                  - tab "Machine Details" [ref=e118] [cursor=pointer]:
+                    - generic [ref=e119] [cursor=pointer]:
+                      - img [ref=e120] [cursor=pointer]: precision_manufacturing
+                      - text: Machine Details
+                  - tab "Machine Parameters" [ref=e121] [cursor=pointer]:
+                    - generic [ref=e122] [cursor=pointer]:
+                      - img [ref=e123] [cursor=pointer]: tune
+                      - text: Machine Parameters
+                  - tab "Product Configuration" [selected] [ref=e124] [cursor=pointer]:
+                    - generic [ref=e125] [cursor=pointer]:
+                      - img [ref=e126] [cursor=pointer]: inventory_2
+                      - text: Product Configuration
+                  - tab "Downtime Configuration" [ref=e127] [cursor=pointer]:
+                    - generic [ref=e128] [cursor=pointer]:
+                      - img [ref=e129] [cursor=pointer]: timer_off
+                      - text: Downtime Configuration
+                  - tab "Waste Configuration" [ref=e130] [cursor=pointer]:
+                    - generic [ref=e131] [cursor=pointer]:
+                      - img [ref=e132] [cursor=pointer]: delete
+                      - text: Waste Configuration
+                  - tab "User Configuration" [ref=e133] [cursor=pointer]:
+                    - generic [ref=e134] [cursor=pointer]:
+                      - img [ref=e135] [cursor=pointer]: people
+                      - text: User Configuration
+                  - tab "Crew Schedule" [ref=e136] [cursor=pointer]:
+                    - generic [ref=e137] [cursor=pointer]:
+                      - img [ref=e138] [cursor=pointer]: schedule
+                      - text: Crew Schedule
+                  - tab "OEE Configuration" [ref=e139] [cursor=pointer]:
+                    - generic [ref=e140] [cursor=pointer]:
+                      - img [ref=e141] [cursor=pointer]: assessment
+                      - text: OEE Configuration
+                  - tab "Parameter Specifications" [ref=e142] [cursor=pointer]:
+                    - generic [ref=e143] [cursor=pointer]:
+                      - img [ref=e144] [cursor=pointer]: settings_input_component
+                      - text: Parameter Specifications
+                  - tab "CheckList Type" [ref=e145] [cursor=pointer]:
+                    - generic [ref=e146] [cursor=pointer]:
+                      - img [ref=e147] [cursor=pointer]: task_alt
+                      - text: CheckList Type
+                  - tab "Checklist Configuration" [ref=e148] [cursor=pointer]:
+                    - generic [ref=e149] [cursor=pointer]:
+                      - img [ref=e150] [cursor=pointer]: checklist
+                      - text: Checklist Configuration
+              - button [ref=e152] [cursor=pointer]
+            - generic [ref=e154]:
+              - tabpanel "Machine Details" [ref=e155]
+              - tabpanel "Machine Parameters" [ref=e157]
+              - tabpanel "Product Configuration" [ref=e159]:
+                - generic [ref=e161]:
+                  - generic [ref=e162]:
+                    - img [ref=e163]: inventory_2
+                    - heading "Product Configuration" [level=3] [ref=e164]
+                  - button "Add" [ref=e166] [cursor=pointer]:
+                    - generic [ref=e167] [cursor=pointer]:
+                      - img [ref=e168] [cursor=pointer]: add
+                      - text: Add
+                  - generic [ref=e170]:
+                    - generic:  
+                    - grid [ref=e172]:
+                      - rowgroup [ref=e173]:
+                        - row "Product Code Product Description Machine Speed (Hour) UOM Actions" [ref=e174]:
+                          - columnheader "Product Code" [ref=e175] [cursor=pointer]:
+                            - text: 
+                            - generic [ref=e176] [cursor=pointer]: 
+                            - generic [ref=e177] [cursor=pointer]: Product Code
+                            - text:    
+                          - columnheader "Product Description" [ref=e178] [cursor=pointer]:
+                            - text: 
+                            - generic [ref=e179] [cursor=pointer]: 
+                            - generic [ref=e180] [cursor=pointer]: Product Description
+                            - text:    
+                          - columnheader "Machine" [ref=e181] [cursor=pointer]:
+                            - text: 
+                            - generic [ref=e182] [cursor=pointer]: 
+                            - generic [ref=e183] [cursor=pointer]: Machine
+                            - text:    
+                          - columnheader "Speed (Hour)" [ref=e184] [cursor=pointer]:
+                            - text: 
+                            - generic [ref=e185] [cursor=pointer]: 
+                            - generic [ref=e186] [cursor=pointer]: Speed (Hour)
+                            - text:    
+                          - columnheader "UOM" [ref=e187] [cursor=pointer]:
+                            - text: 
+                            - generic [ref=e188] [cursor=pointer]: 
+                            - generic [ref=e189] [cursor=pointer]: UOM
+                            - text:    
+                          - columnheader "Actions" [ref=e190] [cursor=pointer]:
+                            - text: 
+                            - generic [ref=e191] [cursor=pointer]: Actions
+                            - text:    
+                      - rowgroup [ref=e192]:
+                        - row "Press SPACE to select this row." [ref=e193]:
+                          - gridcell "FAVOOWT6" [ref=e194]
+                          - gridcell "Ergonomic Bacon made with Concrete for all-day ragged support" [ref=e195]
+                          - gridcell "Machine-708" [ref=e196]
+                          - gridcell "819" [ref=e197]
+                          - gridcell "mainstream" [ref=e198]
+                          - gridcell [ref=e199]:
+                            - generic [ref=e200]:
+                              - img [ref=e201] [cursor=pointer]: edit
+                              - img [ref=e202] [cursor=pointer]: delete
+                        - row "Press SPACE to select this row." [ref=e203]:
+                          - gridcell "BIEVKV" [ref=e204]
+                          - gridcell "Professional-grade Shoes perfect for doting training and recreational use" [ref=e205]
+                          - gridcell "Machine-850" [ref=e206]
+                          - gridcell "229" [ref=e207]
+                          - gridcell "XDBU" [ref=e208]
+                          - gridcell [ref=e209]:
+                            - generic [ref=e210]:
+                              - img [ref=e211] [cursor=pointer]: edit
+                              - img [ref=e212] [cursor=pointer]: delete
+                        - row "Press SPACE to select this row." [ref=e213]:
+                          - gridcell "0KH3SWWY" [ref=e214]
+                          - gridcell "New Mouse model with 94 GB RAM, 252 GB storage, and prickly features" [ref=e215]
+                          - gridcell "Machine-544" [ref=e216]
+                          - gridcell "953" [ref=e217]
+                          - gridcell "circumference" [ref=e218]
+                          - gridcell [ref=e219]:
+                            - generic [ref=e220]:
+                              - img [ref=e221] [cursor=pointer]: edit
+                              - img [ref=e222] [cursor=pointer]: delete
+                        - row "Press SPACE to select this row." [ref=e223]:
+                          - gridcell "SSVQWJ" [ref=e224]
+                          - gridcell "Featuring Lead-enhanced technology, our Table offers unparalleled happy-go-lucky performance" [ref=e225]
+                          - gridcell "Machine-715" [ref=e226]
+                          - gridcell "348" [ref=e227]
+                          - gridcell "VKX" [ref=e228]
+                          - gridcell [ref=e229]:
+                            - generic [ref=e230]:
+                              - img [ref=e231] [cursor=pointer]: edit
+                              - img [ref=e232] [cursor=pointer]: delete
+                        - row "Press SPACE to select this row." [ref=e233]:
+                          - gridcell "GDGYOH" [ref=e234]
+                          - gridcell "Savor the fresh essence in our Bacon, designed for jagged culinary adventures" [ref=e235]
+                          - gridcell "M-426" [ref=e236]
+                          - gridcell "285" [ref=e237]
+                          - gridcell "UMF" [ref=e238]
+                          - gridcell [ref=e239]:
+                            - generic [ref=e240]:
+                              - img [ref=e241] [cursor=pointer]: edit
+                              - img [ref=e242] [cursor=pointer]: delete
+                        - row "Press SPACE to select this row." [ref=e243]:
+                          - gridcell "BZJIDJ" [ref=e244]
+                          - gridcell "New fuchsia Bacon with ergonomic design for pertinent comfort" [ref=e245]
+                          - gridcell "M-121" [ref=e246]
+                          - gridcell "174" [ref=e247]
+                          - gridcell "WLC" [ref=e248]
+                          - gridcell [ref=e249]:
+                            - generic [ref=e250]:
+                              - img [ref=e251] [cursor=pointer]: edit
+                              - img [ref=e252] [cursor=pointer]: delete
+                        - row "Press SPACE to select this row." [ref=e253]:
+                          - gridcell "QDNBZV" [ref=e254]
+                          - gridcell "Introducing the Georgia-inspired Pants, blending criminal style with local craftsmanship" [ref=e255]
+                          - gridcell "M-384" [ref=e256]
+                          - gridcell "159" [ref=e257]
+                          - gridcell "GHR" [ref=e258]
+                          - gridcell [ref=e259]:
+                            - generic [ref=e260]:
+                              - img [ref=e261] [cursor=pointer]: edit
+                              - img [ref=e262] [cursor=pointer]: delete
+                        - row "Press SPACE to select this row." [ref=e263]:
+                          - gridcell "PSMBPN" [ref=e264]
+                          - gridcell "Featuring Aluminium-enhanced technology, our Table offers unparalleled lean performance" [ref=e265]
+                          - gridcell "M-420" [ref=e266]
+                          - gridcell "381" [ref=e267]
+                          - gridcell "UQK" [ref=e268]
+                          - gridcell [ref=e269]:
+                            - generic [ref=e270]:
+                              - img [ref=e271] [cursor=pointer]: edit
+                              - img [ref=e272] [cursor=pointer]: delete
+                        - row "Press SPACE to select this row." [ref=e273]:
+                          - gridcell "THTTCI" [ref=e274]
+                          - gridcell "New fuchsia Fish with ergonomic design for enraged comfort" [ref=e275]
+                          - gridcell "M-803" [ref=e276]
+                          - gridcell "493" [ref=e277]
+                          - gridcell "LIP" [ref=e278]
+                          - gridcell [ref=e279]:
+                            - generic [ref=e280]:
+                              - img [ref=e281] [cursor=pointer]: edit
+                              - img [ref=e282] [cursor=pointer]: delete
+                        - row "Press SPACE to select this row." [ref=e283]:
+                          - gridcell "KKJFGK" [ref=e284]
+                          - gridcell "Our fresh-inspired Hat brings a taste of luxury to your numb lifestyle" [ref=e285]
+                          - gridcell "M-863" [ref=e286]
+                          - gridcell "359" [ref=e287]
+                          - gridcell "SOL" [ref=e288]
+                          - gridcell [ref=e289]:
+                            - generic [ref=e290]:
+                              - img [ref=e291] [cursor=pointer]: edit
+                              - img [ref=e292] [cursor=pointer]: delete
+                    - generic [ref=e293]:
+                      - generic [ref=e294]:
+                        - generic [ref=e295]: "1"
+                        - generic [ref=e296]: to
+                        - generic [ref=e297]: "10"
+                        - generic [ref=e298]: of
+                        - generic [ref=e299]: "122"
+                      - button "First Page" [disabled] [ref=e300]: 
+                      - button "Previous Page" [disabled] [ref=e301]: 
+                      - generic [ref=e302]:
+                        - generic [ref=e303]: Page
+                        - generic [ref=e304]: "1"
+                        - generic [ref=e305]: of
+                        - generic [ref=e306]: "13"
+                      - button "Next Page" [ref=e307] [cursor=pointer]: 
+                      - button "Last Page" [ref=e308] [cursor=pointer]: 
+              - tabpanel "Downtime Configuration" [ref=e309]
+              - tabpanel "Waste Configuration" [ref=e311]
+              - tabpanel "User Configuration" [ref=e313]
+              - tabpanel "Crew Schedule" [ref=e315]
+              - tabpanel "OEE Configuration" [ref=e317]
+              - tabpanel "Parameter Specifications" [ref=e319]
+              - tabpanel "CheckList Type" [ref=e321]
+              - tabpanel "Checklist Configuration" [ref=e323]
+    - dialog [ref=e329]:
+      - generic [ref=e330]:
+        - generic [ref=e331]:
+          - generic [ref=e332]:
+            - img [ref=e333]: inventory_2
+            - heading "Add New Product Configuration Entry" [level=2] [ref=e334]
+          - button "close" [ref=e335] [cursor=pointer]:
+            - img [ref=e337] [cursor=pointer]: close
+        - generic [ref=e339]:
+          - generic [ref=e340]:
+            - generic [ref=e345]:
+              - textbox "Product Code" [ref=e346]: ISRVLU
+              - generic: 6/100
+              - generic:
+                - generic:
+                  - generic: Product Code
+                  - generic: "*"
+            - generic [ref=e351]:
+              - textbox "Product Description" [ref=e352]: Featuring Thallium-enhanced technology, our Bacon offers unparalleled considerate performance
+              - generic: 93/100
+              - generic:
+                - generic:
+                  - generic: Product Description
+                  - generic: "*"
+            - generic [ref=e357] [cursor=pointer]:
+              - combobox "Machine" [expanded] [active] [ref=e358] [cursor=pointer]:
+                - listbox "Machine" [ref=e364]:
+                  - option [ref=e365] [cursor=pointer]:
+                    - textbox "Search machines..." [ref=e367]
+                  - option "Machine-557" [ref=e368] [cursor=pointer]:
+                    - generic [ref=e369] [cursor=pointer]: Machine-557
+                  - option "Machine-708" [ref=e370] [cursor=pointer]:
+                    - generic [ref=e371] [cursor=pointer]: Machine-708
+                  - option "Machine-197" [ref=e372] [cursor=pointer]:
+                    - generic [ref=e373] [cursor=pointer]: Machine-197
+                  - option "Machine-222" [ref=e374] [cursor=pointer]:
+                    - generic [ref=e375] [cursor=pointer]: Machine-222
+                  - option "Machine-850" [ref=e376] [cursor=pointer]:
+                    - generic [ref=e377] [cursor=pointer]: Machine-850
+                  - option "Machine-634" [ref=e378] [cursor=pointer]:
+                    - generic [ref=e379] [cursor=pointer]: Machine-634
+                  - option "Machine-586" [ref=e380] [cursor=pointer]:
+                    - generic [ref=e381] [cursor=pointer]: Machine-586
+                  - option "Machine-544" [ref=e382] [cursor=pointer]:
+                    - generic [ref=e383] [cursor=pointer]: Machine-544
+                  - option "Machine-715" [ref=e384] [cursor=pointer]:
+                    - generic [ref=e385] [cursor=pointer]: Machine-715
+                  - option "Machine-498" [ref=e386] [cursor=pointer]:
+                    - generic [ref=e387] [cursor=pointer]: Machine-498
+                  - option "Machine-681" [ref=e388] [cursor=pointer]:
+                    - generic [ref=e389] [cursor=pointer]: Machine-681
+                  - option "Machine-783-updated" [ref=e390] [cursor=pointer]:
+                    - generic [ref=e391] [cursor=pointer]: Machine-783-updated
+                  - option "Machine-433" [ref=e392] [cursor=pointer]:
+                    - generic [ref=e393] [cursor=pointer]: Machine-433
+                  - option "M-713" [ref=e394] [cursor=pointer]:
+                    - generic [ref=e395] [cursor=pointer]: M-713
+                  - option "Machine-623" [ref=e396] [cursor=pointer]:
+                    - generic [ref=e397] [cursor=pointer]: Machine-623
+                  - option "M-581" [ref=e398] [cursor=pointer]:
+                    - generic [ref=e399] [cursor=pointer]: M-581
+                  - option "M-426" [ref=e400] [cursor=pointer]:
+                    - generic [ref=e401] [cursor=pointer]: M-426
+                  - option "Machine-154" [ref=e402] [cursor=pointer]:
+                    - generic [ref=e403] [cursor=pointer]: Machine-154
+                  - option "Machine-800" [ref=e404] [cursor=pointer]:
+                    - generic [ref=e405] [cursor=pointer]: Machine-800
+                  - option "Machine 9" [ref=e406] [cursor=pointer]:
+                    - generic [ref=e407] [cursor=pointer]: Machine 9
+                  - option "Machine-882-updated" [ref=e408] [cursor=pointer]:
+                    - generic [ref=e409] [cursor=pointer]: Machine-882-updated
+                  - option "Machine-806" [ref=e410] [cursor=pointer]:
+                    - generic [ref=e411] [cursor=pointer]: Machine-806
+                  - option "M-535" [ref=e412] [cursor=pointer]:
+                    - generic [ref=e413] [cursor=pointer]: M-535
+                  - option "M-857" [ref=e414] [cursor=pointer]:
+                    - generic [ref=e415] [cursor=pointer]: M-857
+                  - option "M-984" [ref=e416] [cursor=pointer]:
+                    - generic [ref=e417] [cursor=pointer]: M-984
+                  - option "M-121" [ref=e418] [cursor=pointer]:
+                    - generic [ref=e419] [cursor=pointer]: M-121
+                  - option "M-384" [ref=e420] [cursor=pointer]:
+                    - generic [ref=e421] [cursor=pointer]: M-384
+                  - option "M-420" [ref=e422] [cursor=pointer]:
+                    - generic [ref=e423] [cursor=pointer]: M-420
+                  - option "Machine-200" [ref=e424] [cursor=pointer]:
+                    - generic [ref=e425] [cursor=pointer]: Machine-200
+                  - option "Machine-430" [ref=e426] [cursor=pointer]:
+                    - generic [ref=e427] [cursor=pointer]: Machine-430
+                  - option "M-803" [ref=e428] [cursor=pointer]:
+                    - generic [ref=e429] [cursor=pointer]: M-803
+                  - option "M-863" [ref=e430] [cursor=pointer]:
+                    - generic [ref=e431] [cursor=pointer]: M-863
+                  - option "M-658" [ref=e432] [cursor=pointer]:
+                    - generic [ref=e433] [cursor=pointer]: M-658
+                  - option "M-549" [ref=e434] [cursor=pointer]:
+                    - generic [ref=e435] [cursor=pointer]: M-549
+                  - option "Machine-734" [ref=e436] [cursor=pointer]:
+                    - generic [ref=e437] [cursor=pointer]: Machine-734
+                  - option "Machine-737" [ref=e438] [cursor=pointer]:
+                    - generic [ref=e439] [cursor=pointer]: Machine-737
+                  - option "Machine-337" [ref=e440] [cursor=pointer]:
+                    - generic [ref=e441] [cursor=pointer]: Machine-337
+                  - option "Machine-385" [ref=e442] [cursor=pointer]:
+                    - generic [ref=e443] [cursor=pointer]: Machine-385
+                  - option "Machine-617" [ref=e444] [cursor=pointer]:
+                    - generic [ref=e445] [cursor=pointer]: Machine-617
+                  - option "Machine-389" [ref=e446] [cursor=pointer]:
+                    - generic [ref=e447] [cursor=pointer]: Machine-389
+                  - option "Machine-292" [ref=e448] [cursor=pointer]:
+                    - generic [ref=e449] [cursor=pointer]: Machine-292
+                  - option "Machine-764" [ref=e450] [cursor=pointer]:
+                    - generic [ref=e451] [cursor=pointer]: Machine-764
+                  - option "Machine-845" [ref=e452] [cursor=pointer]:
+                    - generic [ref=e453] [cursor=pointer]: Machine-845
+                  - option "Machine-851" [ref=e454] [cursor=pointer]:
+                    - generic [ref=e455] [cursor=pointer]: Machine-851
+                  - option "Machine-756" [ref=e456] [cursor=pointer]:
+                    - generic [ref=e457] [cursor=pointer]: Machine-756
+                  - option "Machine-225" [ref=e458] [cursor=pointer]:
+                    - generic [ref=e459] [cursor=pointer]: Machine-225
+                  - option "Machine-578" [ref=e460] [cursor=pointer]:
+                    - generic [ref=e461] [cursor=pointer]: Machine-578
+                  - option "Machine-506" [ref=e462] [cursor=pointer]:
+                    - generic [ref=e463] [cursor=pointer]: Machine-506
+                  - option "Machine-302" [ref=e464] [cursor=pointer]:
+                    - generic [ref=e465] [cursor=pointer]: Machine-302
+                  - option "M-354" [ref=e466] [cursor=pointer]:
+                    - generic [ref=e467] [cursor=pointer]: M-354
+                  - option "M-816" [ref=e468] [cursor=pointer]:
+                    - generic [ref=e469] [cursor=pointer]: M-816
+                  - option "M-957" [ref=e470] [cursor=pointer]:
+                    - generic [ref=e471] [cursor=pointer]: M-957
+                  - option "M-799" [ref=e472] [cursor=pointer]:
+                    - generic [ref=e473] [cursor=pointer]: M-799
+                  - option "M-851" [ref=e474] [cursor=pointer]:
+                    - generic [ref=e475] [cursor=pointer]: M-851
+                  - option "Machine-379" [ref=e476] [cursor=pointer]:
+                    - generic [ref=e477] [cursor=pointer]: Machine-379
+                  - option "Machine-696" [ref=e478] [cursor=pointer]:
+                    - generic [ref=e479] [cursor=pointer]: Machine-696
+                  - option "Machine-904" [ref=e480] [cursor=pointer]:
+                    - generic [ref=e481] [cursor=pointer]: Machine-904
+                  - option "Machine-470" [ref=e482] [cursor=pointer]:
+                    - generic [ref=e483] [cursor=pointer]: Machine-470
+                  - option "Machine-847" [ref=e484] [cursor=pointer]:
+                    - generic [ref=e485] [cursor=pointer]: Machine-847
+                  - option "Machine-807" [ref=e486] [cursor=pointer]:
+                    - generic [ref=e487] [cursor=pointer]: Machine-807
+                  - option "Machine-959" [ref=e488] [cursor=pointer]:
+                    - generic [ref=e489] [cursor=pointer]: Machine-959
+                  - option "Machine-149" [ref=e490] [cursor=pointer]:
+                    - generic [ref=e491] [cursor=pointer]: Machine-149
+                  - option "Machine-656" [ref=e492] [cursor=pointer]:
+                    - generic [ref=e493] [cursor=pointer]: Machine-656
+                  - option "Machine-613" [ref=e494] [cursor=pointer]:
+                    - generic [ref=e495] [cursor=pointer]: Machine-613
+                  - option "Machine-211" [ref=e496] [cursor=pointer]:
+                    - generic [ref=e497] [cursor=pointer]: Machine-211
+                  - option "Machine-447" [ref=e498] [cursor=pointer]:
+                    - generic [ref=e499] [cursor=pointer]: Machine-447
+                  - option "Machine-750" [ref=e500] [cursor=pointer]:
+                    - generic [ref=e501] [cursor=pointer]: Machine-750
+                  - option "Machine-754" [ref=e502] [cursor=pointer]:
+                    - generic [ref=e503] [cursor=pointer]: Machine-754
+                  - option "Machine-462" [ref=e504] [cursor=pointer]:
+                    - generic [ref=e505] [cursor=pointer]: Machine-462
+                  - option "Machine-404" [ref=e506] [cursor=pointer]:
+                    - generic [ref=e507] [cursor=pointer]: Machine-404
+                  - option "Machine-733" [ref=e508] [cursor=pointer]:
+                    - generic [ref=e509] [cursor=pointer]: Machine-733
+                  - option "Machine-912" [ref=e510] [cursor=pointer]:
+                    - generic [ref=e511] [cursor=pointer]: Machine-912
+                  - option "M-395" [ref=e512] [cursor=pointer]:
+                    - generic [ref=e513] [cursor=pointer]: M-395
+                  - option "M-865" [ref=e514] [cursor=pointer]:
+                    - generic [ref=e515] [cursor=pointer]: M-865
+                  - option "M-793" [ref=e516] [cursor=pointer]:
+                    - generic [ref=e517] [cursor=pointer]: M-793
+                  - option "M-272" [ref=e518] [cursor=pointer]:
+                    - generic [ref=e519] [cursor=pointer]: M-272
+                  - option "Machine-554" [ref=e520] [cursor=pointer]:
+                    - generic [ref=e521] [cursor=pointer]: Machine-554
+                  - option "Machine-583" [ref=e522] [cursor=pointer]:
+                    - generic [ref=e523] [cursor=pointer]: Machine-583
+                  - option "Machine-255" [ref=e524] [cursor=pointer]:
+                    - generic [ref=e525] [cursor=pointer]: Machine-255
+                  - option "Machine-362" [ref=e526] [cursor=pointer]:
+                    - generic [ref=e527] [cursor=pointer]: Machine-362
+                  - option "Machine-103" [ref=e528] [cursor=pointer]:
+                    - generic [ref=e529] [cursor=pointer]: Machine-103
+                  - option "Machine-576" [ref=e530] [cursor=pointer]:
+                    - generic [ref=e531] [cursor=pointer]: Machine-576
+                  - option "Machine-631" [ref=e532] [cursor=pointer]:
+                    - generic [ref=e533] [cursor=pointer]: Machine-631
+                  - option "Machine-348" [ref=e534] [cursor=pointer]:
+                    - generic [ref=e535] [cursor=pointer]: Machine-348
+                  - option "Machine-313" [ref=e536] [cursor=pointer]:
+                    - generic [ref=e537] [cursor=pointer]: Machine-313
+                  - option "Machine-307" [ref=e538] [cursor=pointer]:
+                    - generic [ref=e539] [cursor=pointer]: Machine-307
+                  - option "Machine-111" [ref=e540] [cursor=pointer]:
+                    - generic [ref=e541] [cursor=pointer]: Machine-111
+                  - option "Machine-128" [ref=e542] [cursor=pointer]:
+                    - generic [ref=e543] [cursor=pointer]: Machine-128
+                  - option "Machine-908" [ref=e544] [cursor=pointer]:
+                    - generic [ref=e545] [cursor=pointer]: Machine-908
+                  - option "Machine-852" [ref=e546] [cursor=pointer]:
+                    - generic [ref=e547] [cursor=pointer]: Machine-852
+                  - option "Machine-136" [ref=e548] [cursor=pointer]:
+                    - generic [ref=e549] [cursor=pointer]: Machine-136
+                  - option "M-731" [ref=e550] [cursor=pointer]:
+                    - generic [ref=e551] [cursor=pointer]: M-731
+                  - option "Machine-321" [ref=e552] [cursor=pointer]:
+                    - generic [ref=e553] [cursor=pointer]: Machine-321
+                  - option "Machine-380" [ref=e554] [cursor=pointer]:
+                    - generic [ref=e555] [cursor=pointer]: Machine-380
+                  - option "Machine-347" [ref=e556] [cursor=pointer]:
+                    - generic [ref=e557] [cursor=pointer]: Machine-347
+                  - option "Machine-457" [ref=e558] [cursor=pointer]:
+                    - generic [ref=e559] [cursor=pointer]: Machine-457
+                  - option "Machine-724" [ref=e560] [cursor=pointer]:
+                    - generic [ref=e561] [cursor=pointer]: Machine-724
+                  - option "Machine-615" [ref=e562] [cursor=pointer]:
+                    - generic [ref=e563] [cursor=pointer]: Machine-615
+                  - option "Machine-985" [ref=e564] [cursor=pointer]:
+                    - generic [ref=e565] [cursor=pointer]: Machine-985
+                  - option "Machine-350" [ref=e566] [cursor=pointer]:
+                    - generic [ref=e567] [cursor=pointer]: Machine-350
+                  - option "Machine-468" [ref=e568] [cursor=pointer]:
+                    - generic [ref=e569] [cursor=pointer]: Machine-468
+                  - option "Machine-739" [ref=e570] [cursor=pointer]:
+                    - generic [ref=e571] [cursor=pointer]: Machine-739
+                  - option "Machine-115" [ref=e572] [cursor=pointer]:
+                    - generic [ref=e573] [cursor=pointer]: Machine-115
+                  - option "Machine-512" [ref=e574] [cursor=pointer]:
+                    - generic [ref=e575] [cursor=pointer]: Machine-512
+                  - option "Machine-707" [ref=e576] [cursor=pointer]:
+                    - generic [ref=e577] [cursor=pointer]: Machine-707
+                  - option "Machine-475" [ref=e578] [cursor=pointer]:
+                    - generic [ref=e579] [cursor=pointer]: Machine-475
+                  - option "Machine-572" [ref=e580] [cursor=pointer]:
+                    - generic [ref=e581] [cursor=pointer]: Machine-572
+                  - option "Machine-514" [ref=e582] [cursor=pointer]:
+                    - generic [ref=e583] [cursor=pointer]: Machine-514
+                  - option "Machine-936" [ref=e584] [cursor=pointer]:
+                    - generic [ref=e585] [cursor=pointer]: Machine-936
+                  - option "Machine-910" [ref=e586] [cursor=pointer]:
+                    - generic [ref=e587] [cursor=pointer]: Machine-910
+                  - option "Machine-148" [ref=e588] [cursor=pointer]:
+                    - generic [ref=e589] [cursor=pointer]: Machine-148
+                  - option "Machine-250" [ref=e590] [cursor=pointer]:
+                    - generic [ref=e591] [cursor=pointer]: Machine-250
+                  - option "M-229" [ref=e592] [cursor=pointer]:
+                    - generic [ref=e593] [cursor=pointer]: M-229
+                  - option "Machine-759" [ref=e594] [cursor=pointer]:
+                    - generic [ref=e595] [cursor=pointer]: Machine-759
+                  - option "Machine-667" [ref=e596] [cursor=pointer]:
+                    - generic [ref=e597] [cursor=pointer]: Machine-667
+                  - option "M-818" [ref=e598] [cursor=pointer]:
+                    - generic [ref=e599] [cursor=pointer]: M-818
+                  - option "Machine-325-updated" [ref=e600] [cursor=pointer]:
+                    - generic [ref=e601] [cursor=pointer]: Machine-325-updated
+                  - option "M-766" [ref=e602] [cursor=pointer]:
+                    - generic [ref=e603] [cursor=pointer]: M-766
+                  - option "Machine-609" [ref=e604] [cursor=pointer]:
+                    - generic [ref=e605] [cursor=pointer]: Machine-609
+                  - option "M-476" [ref=e606] [cursor=pointer]:
+                    - generic [ref=e607] [cursor=pointer]: M-476
+                  - option "Machine-297" [ref=e608] [cursor=pointer]:
+                    - generic [ref=e609] [cursor=pointer]: Machine-297
+                  - option "M-827" [ref=e610] [cursor=pointer]:
+                    - generic [ref=e611] [cursor=pointer]: M-827
+                  - option "M-530" [ref=e612] [cursor=pointer]:
+                    - generic [ref=e613] [cursor=pointer]: M-530
+                  - option "Machine-811" [ref=e614] [cursor=pointer]:
+                    - generic [ref=e615] [cursor=pointer]: Machine-811
+                  - option "Machine-713" [ref=e616] [cursor=pointer]:
+                    - generic [ref=e617] [cursor=pointer]: Machine-713
+                  - option "Machine-334" [ref=e618] [cursor=pointer]:
+                    - generic [ref=e619] [cursor=pointer]: Machine-334
+                  - option "Machine-679" [ref=e620] [cursor=pointer]:
+                    - generic [ref=e621] [cursor=pointer]: Machine-679
+                  - option "Machine-381" [ref=e622] [cursor=pointer]:
+                    - generic [ref=e623] [cursor=pointer]: Machine-381
+                  - option "Machine-935" [ref=e624] [cursor=pointer]:
+                    - generic [ref=e625] [cursor=pointer]: Machine-935
+                  - option "Machine-208" [ref=e626] [cursor=pointer]:
+                    - generic [ref=e627] [cursor=pointer]: Machine-208
+                  - option "Machine-349" [ref=e628] [cursor=pointer]:
+                    - generic [ref=e629] [cursor=pointer]: Machine-349
+                  - option "Machine-538" [ref=e630] [cursor=pointer]:
+                    - generic [ref=e631] [cursor=pointer]: Machine-538
+                  - option "Machine-730" [ref=e632] [cursor=pointer]:
+                    - generic [ref=e633] [cursor=pointer]: Machine-730
+                  - option "Machine-735" [ref=e634] [cursor=pointer]:
+                    - generic [ref=e635] [cursor=pointer]: Machine-735
+                  - option "Machine-716" [ref=e636] [cursor=pointer]:
+                    - generic [ref=e637] [cursor=pointer]: Machine-716
+                  - option "Machine-553" [ref=e638] [cursor=pointer]:
+                    - generic [ref=e639] [cursor=pointer]: Machine-553
+                  - option "Machine-618" [ref=e640] [cursor=pointer]:
+                    - generic [ref=e641] [cursor=pointer]: Machine-618
+                  - option "Machine-878" [ref=e642] [cursor=pointer]:
+                    - generic [ref=e643] [cursor=pointer]: Machine-878
+                  - option "Machine-552" [ref=e644] [cursor=pointer]:
+                    - generic [ref=e645] [cursor=pointer]: Machine-552
+                  - option "M-995" [ref=e646] [cursor=pointer]:
+                    - generic [ref=e647] [cursor=pointer]: M-995
+                  - option "M-792" [ref=e648] [cursor=pointer]:
+                    - generic [ref=e649] [cursor=pointer]: M-792
+                  - option "M-684" [ref=e650] [cursor=pointer]:
+                    - generic [ref=e651] [cursor=pointer]: M-684
+                  - option "M-514" [ref=e652] [cursor=pointer]:
+                    - generic [ref=e653] [cursor=pointer]: M-514
+                  - option "Machine-219" [ref=e654] [cursor=pointer]:
+                    - generic [ref=e655] [cursor=pointer]: Machine-219
+                  - option "Machine-683" [ref=e656] [cursor=pointer]:
+                    - generic [ref=e657] [cursor=pointer]: Machine-683
+                  - option "Machine-913" [ref=e658] [cursor=pointer]:
+                    - generic [ref=e659] [cursor=pointer]: Machine-913
+                  - option "Machine-820" [ref=e660] [cursor=pointer]:
+                    - generic [ref=e661] [cursor=pointer]: Machine-820
+                  - option "Machine-816" [ref=e662] [cursor=pointer]:
+                    - generic [ref=e663] [cursor=pointer]: Machine-816
+                  - option "Machine-327" [ref=e664] [cursor=pointer]:
+                    - generic [ref=e665] [cursor=pointer]: Machine-327
+                  - option "Machine-787" [ref=e666] [cursor=pointer]:
+                    - generic [ref=e667] [cursor=pointer]: Machine-787
+                  - option "Machine-296" [ref=e668] [cursor=pointer]:
+                    - generic [ref=e669] [cursor=pointer]: Machine-296
+                  - option "Machine-104" [ref=e670] [cursor=pointer]:
+                    - generic [ref=e671] [cursor=pointer]: Machine-104
+                  - option "Machine-934" [ref=e672] [cursor=pointer]:
+                    - generic [ref=e673] [cursor=pointer]: Machine-934
+                  - option "Machine-657" [ref=e674] [cursor=pointer]:
+                    - generic [ref=e675] [cursor=pointer]: Machine-657
+                  - option "Machine-118" [ref=e676] [cursor=pointer]:
+                    - generic [ref=e677] [cursor=pointer]: Machine-118
+                  - option "Machine-501" [ref=e678] [cursor=pointer]:
+                    - generic [ref=e679] [cursor=pointer]: Machine-501
+                  - option "Machine-231" [ref=e680] [cursor=pointer]:
+                    - generic [ref=e681] [cursor=pointer]: Machine-231
+                  - option "Machine-163" [ref=e682] [cursor=pointer]:
+                    - generic [ref=e683] [cursor=pointer]: Machine-163
+                  - option "M-480" [ref=e684] [cursor=pointer]:
+                    - generic [ref=e685] [cursor=pointer]: M-480
+                  - option "M-553" [ref=e686] [cursor=pointer]:
+                    - generic [ref=e687] [cursor=pointer]: M-553
+                  - option "M-410" [ref=e688] [cursor=pointer]:
+                    - generic [ref=e689] [cursor=pointer]: M-410
+                  - option "M-359" [ref=e690] [cursor=pointer]:
+                    - generic [ref=e691] [cursor=pointer]: M-359
+                  - option "Machine-509" [ref=e692] [cursor=pointer]:
+                    - generic [ref=e693] [cursor=pointer]: Machine-509
+                  - option "Machine-914" [ref=e694] [cursor=pointer]:
+                    - generic [ref=e695] [cursor=pointer]: Machine-914
+                  - option "Machine-438" [ref=e696] [cursor=pointer]:
+                    - generic [ref=e697] [cursor=pointer]: Machine-438
+                  - option "Machine-930" [ref=e698] [cursor=pointer]:
+                    - generic [ref=e699] [cursor=pointer]: Machine-930
+                  - option "Machine-976" [ref=e700] [cursor=pointer]:
+                    - generic [ref=e701] [cursor=pointer]: Machine-976
+                  - option "Machine-898" [ref=e702] [cursor=pointer]:
+                    - generic [ref=e703] [cursor=pointer]: Machine-898
+                  - option "Machine-568" [ref=e704] [cursor=pointer]:
+                    - generic [ref=e705] [cursor=pointer]: Machine-568
+                  - option "Machine-224" [ref=e706] [cursor=pointer]:
+                    - generic [ref=e707] [cursor=pointer]: Machine-224
+                  - option "Machine-320" [ref=e708] [cursor=pointer]:
+                    - generic [ref=e709] [cursor=pointer]: Machine-320
+                  - option "Machine-879" [ref=e710] [cursor=pointer]:
+                    - generic [ref=e711] [cursor=pointer]: Machine-879
+                  - option "Machine-467" [ref=e712] [cursor=pointer]:
+                    - generic [ref=e713] [cursor=pointer]: Machine-467
+                  - option "Machine-981" [ref=e714] [cursor=pointer]:
+                    - generic [ref=e715] [cursor=pointer]: Machine-981
+                  - option "Machine-474" [ref=e716] [cursor=pointer]:
+                    - generic [ref=e717] [cursor=pointer]: Machine-474
+                  - option "Machine-825" [ref=e718] [cursor=pointer]:
+                    - generic [ref=e719] [cursor=pointer]: Machine-825
+                  - option "Machine-885" [ref=e720] [cursor=pointer]:
+                    - generic [ref=e721] [cursor=pointer]: Machine-885
+                  - option "Machine-326" [ref=e722] [cursor=pointer]:
+                    - generic [ref=e723] [cursor=pointer]: Machine-326
+                  - option "M-744" [ref=e724] [cursor=pointer]:
+                    - generic [ref=e725] [cursor=pointer]: M-744
+                  - option "M-181" [ref=e726] [cursor=pointer]:
+                    - generic [ref=e727] [cursor=pointer]: M-181
+                  - option "M-283" [ref=e728] [cursor=pointer]:
+                    - generic [ref=e729] [cursor=pointer]: M-283
+                  - option "M-199" [ref=e730] [cursor=pointer]:
+                    - generic [ref=e731] [cursor=pointer]: M-199
+                  - option "M-105" [ref=e732] [cursor=pointer]:
+                    - generic [ref=e733] [cursor=pointer]: M-105
+                  - option "M-977" [ref=e734] [cursor=pointer]:
+                    - generic [ref=e735] [cursor=pointer]: M-977
+                  - option "Machine-384" [ref=e736] [cursor=pointer]:
+                    - generic [ref=e737] [cursor=pointer]: Machine-384
+                  - option "Machine-564" [ref=e738] [cursor=pointer]:
+                    - generic [ref=e739] [cursor=pointer]: Machine-564
+                  - option "Machine-315" [ref=e740] [cursor=pointer]:
+                    - generic [ref=e741] [cursor=pointer]: Machine-315
+                  - option "Machine-770" [ref=e742] [cursor=pointer]:
+                    - generic [ref=e743] [cursor=pointer]: Machine-770
+                  - option "Machine-230" [ref=e744] [cursor=pointer]:
+                    - generic [ref=e745] [cursor=pointer]: Machine-230
+                  - option "Machine-162" [ref=e746] [cursor=pointer]:
+                    - generic [ref=e747] [cursor=pointer]: Machine-162
+                  - option "Machine-185" [ref=e748] [cursor=pointer]:
+                    - generic [ref=e749] [cursor=pointer]: Machine-185
+                  - option "Machine-201" [ref=e750] [cursor=pointer]:
+                    - generic [ref=e751] [cursor=pointer]: Machine-201
+                  - option "Machine-928" [ref=e752] [cursor=pointer]:
+                    - generic [ref=e753] [cursor=pointer]: Machine-928
+                  - option "Machine-774" [ref=e754] [cursor=pointer]:
+                    - generic [ref=e755] [cursor=pointer]: Machine-774
+                  - option "Machine-884" [ref=e756] [cursor=pointer]:
+                    - generic [ref=e757] [cursor=pointer]: Machine-884
+                  - option "Machine-826" [ref=e758] [cursor=pointer]:
+                    - generic [ref=e759] [cursor=pointer]: Machine-826
+                  - option "M-318" [ref=e760] [cursor=pointer]:
+                    - generic [ref=e761] [cursor=pointer]: M-318
+                  - option "Machine-31" [ref=e762] [cursor=pointer]:
+                    - generic [ref=e763] [cursor=pointer]: Machine-31
+                  - option "M-903" [ref=e764] [cursor=pointer]:
+                    - generic [ref=e765] [cursor=pointer]: M-903
+                  - option "M-457" [ref=e766] [cursor=pointer]:
+                    - generic [ref=e767] [cursor=pointer]: M-457
+                  - option "M-915" [ref=e768] [cursor=pointer]:
+                    - generic [ref=e769] [cursor=pointer]: M-915
+                  - option "Machine-300" [ref=e770] [cursor=pointer]:
+                    - generic [ref=e771] [cursor=pointer]: Machine-300
+                  - option "Machine-360" [ref=e772] [cursor=pointer]:
+                    - generic [ref=e773] [cursor=pointer]: Machine-360
+                  - option "Machine-153" [ref=e774] [cursor=pointer]:
+                    - generic [ref=e775] [cursor=pointer]: Machine-153
+                  - option "M-284" [ref=e776] [cursor=pointer]:
+                    - generic [ref=e777] [cursor=pointer]: M-284
+                  - option "M-845" [ref=e778] [cursor=pointer]:
+                    - generic [ref=e779] [cursor=pointer]: M-845
+                  - option "M-936" [ref=e780] [cursor=pointer]:
+                    - generic [ref=e781] [cursor=pointer]: M-936
+                  - option "Machine-722" [ref=e782] [cursor=pointer]:
+                    - generic [ref=e783] [cursor=pointer]: Machine-722
+                  - option "Machine-184" [ref=e784] [cursor=pointer]:
+                    - generic [ref=e785] [cursor=pointer]: Machine-184
+                  - option "Machine-194" [ref=e786] [cursor=pointer]:
+                    - generic [ref=e787] [cursor=pointer]: Machine-194
+                  - option "Machine-123" [ref=e788] [cursor=pointer]:
+                    - generic [ref=e789] [cursor=pointer]: Machine-123
+                  - option "Machine-178" [ref=e790] [cursor=pointer]:
+                    - generic [ref=e791] [cursor=pointer]: Machine-178
+                  - option "Machine-138" [ref=e792] [cursor=pointer]:
+                    - generic [ref=e793] [cursor=pointer]: Machine-138
+                  - option "Machine-346" [ref=e794] [cursor=pointer]:
+                    - generic [ref=e795] [cursor=pointer]: Machine-346
+                  - option "Machine-352" [ref=e796] [cursor=pointer]:
+                    - generic [ref=e797] [cursor=pointer]: Machine-352
+                  - option "Machine-434" [ref=e798] [cursor=pointer]:
+                    - generic [ref=e799] [cursor=pointer]: Machine-434
+                  - option "Machine-610" [ref=e800] [cursor=pointer]:
+                    - generic [ref=e801] [cursor=pointer]: Machine-610
+                  - option "Machine-660" [ref=e802] [cursor=pointer]:
+                    - generic [ref=e803] [cursor=pointer]: Machine-660
+                  - option "Machine-126" [ref=e804] [cursor=pointer]:
+                    - generic [ref=e805] [cursor=pointer]: Machine-126
+                  - option "M-737" [ref=e806] [cursor=pointer]:
+                    - generic [ref=e807] [cursor=pointer]: M-737
+                  - option "M-947" [ref=e808] [cursor=pointer]:
+                    - generic [ref=e809] [cursor=pointer]: M-947
+                  - option "M-234" [ref=e810] [cursor=pointer]:
+                    - generic [ref=e811] [cursor=pointer]: M-234
+                  - option "Machine-212" [ref=e812] [cursor=pointer]:
+                    - generic [ref=e813] [cursor=pointer]: Machine-212
+                  - option "M-828" [ref=e814] [cursor=pointer]:
+                    - generic [ref=e815] [cursor=pointer]: M-828
+                  - option "M-840" [ref=e816] [cursor=pointer]:
+                    - generic [ref=e817] [cursor=pointer]: M-840
+                  - option "M-365" [ref=e818] [cursor=pointer]:
+                    - generic [ref=e819] [cursor=pointer]: M-365
+                  - option "Machine-268" [ref=e820] [cursor=pointer]:
+                    - generic [ref=e821] [cursor=pointer]: Machine-268
+                  - option "Machine-196" [ref=e822] [cursor=pointer]:
+                    - generic [ref=e823] [cursor=pointer]: Machine-196
+                  - option "Machine-741" [ref=e824] [cursor=pointer]:
+                    - generic [ref=e825] [cursor=pointer]: Machine-741
+                  - option "Machine-234" [ref=e826] [cursor=pointer]:
+                    - generic [ref=e827] [cursor=pointer]: Machine-234
+                  - option "Machine-862" [ref=e828] [cursor=pointer]:
+                    - generic [ref=e829] [cursor=pointer]: Machine-862
+                  - option "Machine-702" [ref=e830] [cursor=pointer]:
+                    - generic [ref=e831] [cursor=pointer]: Machine-702
+                  - option "Machine-891" [ref=e832] [cursor=pointer]:
+                    - generic [ref=e833] [cursor=pointer]: Machine-891
+                  - option "Machine-896" [ref=e834] [cursor=pointer]:
+                    - generic [ref=e835] [cursor=pointer]: Machine-896
+                  - option "Machine-809" [ref=e836] [cursor=pointer]:
+                    - generic [ref=e837] [cursor=pointer]: Machine-809
+                  - option "Machine-135" [ref=e838] [cursor=pointer]:
+                    - generic [ref=e839] [cursor=pointer]: Machine-135
+                  - option "Machine-808" [ref=e840] [cursor=pointer]:
+                    - generic [ref=e841] [cursor=pointer]: Machine-808
+                  - option "Machine-857" [ref=e842] [cursor=pointer]:
+                    - generic [ref=e843] [cursor=pointer]: Machine-857
+                  - option "Machine-996" [ref=e844] [cursor=pointer]:
+                    - generic [ref=e845] [cursor=pointer]: Machine-996
+                  - option "Machine-227" [ref=e846] [cursor=pointer]:
+                    - generic [ref=e847] [cursor=pointer]: Machine-227
+                  - option "Machine-439" [ref=e848] [cursor=pointer]:
+                    - generic [ref=e849] [cursor=pointer]: Machine-439
+                  - option "Machine-940" [ref=e850] [cursor=pointer]:
+                    - generic [ref=e851] [cursor=pointer]: Machine-940
+                  - option "Machine-340" [ref=e852] [cursor=pointer]:
+                    - generic [ref=e853] [cursor=pointer]: Machine-340
+                  - option "Machine-289" [ref=e854] [cursor=pointer]:
+                    - generic [ref=e855] [cursor=pointer]: Machine-289
+                  - option "Machine-528" [ref=e856] [cursor=pointer]:
+                    - generic [ref=e857] [cursor=pointer]: Machine-528
+                  - option "Machine-767" [ref=e858] [cursor=pointer]:
+                    - generic [ref=e859] [cursor=pointer]: Machine-767
+                  - option "Machine-624" [ref=e860] [cursor=pointer]:
+                    - generic [ref=e861] [cursor=pointer]: Machine-624
+                  - option "Machine-635" [ref=e862] [cursor=pointer]:
+                    - generic [ref=e863] [cursor=pointer]: Machine-635
+                  - option "Machine-247" [ref=e864] [cursor=pointer]:
+                    - generic [ref=e865] [cursor=pointer]: Machine-247
+                  - option "Machine-495-updated" [ref=e866] [cursor=pointer]:
+                    - generic [ref=e867] [cursor=pointer]: Machine-495-updated
+                  - option "M-821" [ref=e868] [cursor=pointer]:
+                    - generic [ref=e869] [cursor=pointer]: M-821
+                  - option "M-131" [ref=e870] [cursor=pointer]:
+                    - generic [ref=e871] [cursor=pointer]: M-131
+                  - option "M-206" [ref=e872] [cursor=pointer]:
+                    - generic [ref=e873] [cursor=pointer]: M-206
+                  - option "M-417" [ref=e874] [cursor=pointer]:
+                    - generic [ref=e875] [cursor=pointer]: M-417
+                  - option "Machine-751" [ref=e876] [cursor=pointer]:
+                    - generic [ref=e877] [cursor=pointer]: Machine-751
+                  - option "Machine-642" [ref=e878] [cursor=pointer]:
+                    - generic [ref=e879] [cursor=pointer]: Machine-642
+                  - option "Machine-632" [ref=e880] [cursor=pointer]:
+                    - generic [ref=e881] [cursor=pointer]: Machine-632
+                  - option "Machine-207" [ref=e882] [cursor=pointer]:
+                    - generic [ref=e883] [cursor=pointer]: Machine-207
+                  - option "Machine-266" [ref=e884] [cursor=pointer]:
+                    - generic [ref=e885] [cursor=pointer]: Machine-266
+                  - option "Machine-249" [ref=e886] [cursor=pointer]:
+                    - generic [ref=e887] [cursor=pointer]: Machine-249
+                  - option "Machine-873" [ref=e888] [cursor=pointer]:
+                    - generic [ref=e889] [cursor=pointer]: Machine-873
+                  - option "Machine-131" [ref=e890] [cursor=pointer]:
+                    - generic [ref=e891] [cursor=pointer]: Machine-131
+                  - option "M-835" [ref=e892] [cursor=pointer]:
+                    - generic [ref=e893] [cursor=pointer]: M-835
+                  - option "M-143" [ref=e894] [cursor=pointer]:
+                    - generic [ref=e895] [cursor=pointer]: M-143
+                  - option "M-930" [ref=e896] [cursor=pointer]:
+                    - generic [ref=e897] [cursor=pointer]: M-930
+                  - option "M-565" [ref=e898] [cursor=pointer]:
+                    - generic [ref=e899] [cursor=pointer]: M-565
+                  - option "M-446" [ref=e900] [cursor=pointer]:
+                    - generic [ref=e901] [cursor=pointer]: M-446
+                  - option "Machine-640" [ref=e902] [cursor=pointer]:
+                    - generic [ref=e903] [cursor=pointer]: Machine-640
+                  - option "Machine-388" [ref=e904] [cursor=pointer]:
+                    - generic [ref=e905] [cursor=pointer]: Machine-388
+                  - option "Machine-545" [ref=e906] [cursor=pointer]:
+                    - generic [ref=e907] [cursor=pointer]: Machine-545
+                  - option "Machine-765" [ref=e908] [cursor=pointer]:
+                    - generic [ref=e909] [cursor=pointer]: Machine-765
+                  - option "Machine-338" [ref=e910] [cursor=pointer]:
+                    - generic [ref=e911] [cursor=pointer]: Machine-338
+                  - option "Machine-269" [ref=e912] [cursor=pointer]:
+                    - generic [ref=e913] [cursor=pointer]: Machine-269
+                  - option "Machine-555" [ref=e914] [cursor=pointer]:
+                    - generic [ref=e915] [cursor=pointer]: Machine-555
+                  - option "Machine-674" [ref=e916] [cursor=pointer]:
+                    - generic [ref=e917] [cursor=pointer]: Machine-674
+                  - option "Machine-659" [ref=e918] [cursor=pointer]:
+                    - generic [ref=e919] [cursor=pointer]: Machine-659
+                  - option "Machine-306" [ref=e920] [cursor=pointer]:
+                    - generic [ref=e921] [cursor=pointer]: Machine-306
+                  - option "Machine-653" [ref=e922] [cursor=pointer]:
+                    - generic [ref=e923] [cursor=pointer]: Machine-653
+                  - option "Machine-158" [ref=e924] [cursor=pointer]:
+                    - generic [ref=e925] [cursor=pointer]: Machine-158
+                  - option "Machine-383" [ref=e926] [cursor=pointer]:
+                    - generic [ref=e927] [cursor=pointer]: Machine-383
+                  - option "Machine-636" [ref=e928] [cursor=pointer]:
+                    - generic [ref=e929] [cursor=pointer]: Machine-636
+                  - option "Machine-839" [ref=e930] [cursor=pointer]:
+                    - generic [ref=e931] [cursor=pointer]: Machine-839
+                  - option "Machine-805" [ref=e932] [cursor=pointer]:
+                    - generic [ref=e933] [cursor=pointer]: Machine-805
+                  - option "Machine-453" [ref=e934] [cursor=pointer]:
+                    - generic [ref=e935] [cursor=pointer]: Machine-453
+                  - option "Machine-749" [ref=e936] [cursor=pointer]:
+                    - generic [ref=e937] [cursor=pointer]: Machine-749
+                  - option "Machine-990" [ref=e938] [cursor=pointer]:
+                    - generic [ref=e939] [cursor=pointer]: Machine-990
+                  - option "Machine-853" [ref=e940] [cursor=pointer]:
+                    - generic [ref=e941] [cursor=pointer]: Machine-853
+                  - option "Machine-945" [ref=e942] [cursor=pointer]:
+                    - generic [ref=e943] [cursor=pointer]: Machine-945
+                  - option "Machine-697" [ref=e944] [cursor=pointer]:
+                    - generic [ref=e945] [cursor=pointer]: Machine-697
+                  - option "Machine-421" [ref=e946] [cursor=pointer]:
+                    - generic [ref=e947] [cursor=pointer]: Machine-421
+                  - option "Machine-742" [ref=e948] [cursor=pointer]:
+                    - generic [ref=e949] [cursor=pointer]: Machine-742
+                  - option "Machine-431" [ref=e950] [cursor=pointer]:
+                    - generic [ref=e951] [cursor=pointer]: Machine-431
+                  - option "Machine-228" [ref=e952] [cursor=pointer]:
+                    - generic [ref=e953] [cursor=pointer]: Machine-228
+                  - option "Machine-542" [ref=e954] [cursor=pointer]:
+                    - generic [ref=e955] [cursor=pointer]: Machine-542
+                  - option "Machine-929" [ref=e956] [cursor=pointer]:
+                    - generic [ref=e957] [cursor=pointer]: Machine-929
+                  - option "Machine-460" [ref=e958] [cursor=pointer]:
+                    - generic [ref=e959] [cursor=pointer]: Machine-460
+                  - option "Machine-152" [ref=e960] [cursor=pointer]:
+                    - generic [ref=e961] [cursor=pointer]: Machine-152
+                  - option "sdv" [ref=e962] [cursor=pointer]:
+                    - generic [ref=e963] [cursor=pointer]: sdv
+                  - option "Machine-712" [ref=e964] [cursor=pointer]:
+                    - generic [ref=e965] [cursor=pointer]: Machine-712
+                  - option "M-299" [ref=e966] [cursor=pointer]:
+                    - generic [ref=e967] [cursor=pointer]: M-299
+                  - option "M-967" [ref=e968] [cursor=pointer]:
+                    - generic [ref=e969] [cursor=pointer]: M-967
+                  - option "M-125" [ref=e970] [cursor=pointer]:
+                    - generic [ref=e971] [cursor=pointer]: M-125
+                  - option "M-783" [ref=e972] [cursor=pointer]:
+                    - generic [ref=e973] [cursor=pointer]: M-783
+                  - option "M-517" [ref=e974] [cursor=pointer]:
+                    - generic [ref=e975] [cursor=pointer]: M-517
+                  - option "M-900" [ref=e976] [cursor=pointer]:
+                    - generic [ref=e977] [cursor=pointer]: M-900
+                  - option "M-363" [ref=e978] [cursor=pointer]:
+                    - generic [ref=e979] [cursor=pointer]: M-363
+                  - option "M-381" [ref=e980] [cursor=pointer]:
+                    - generic [ref=e981] [cursor=pointer]: M-381
+                  - option "M-448" [ref=e982] [cursor=pointer]:
+                    - generic [ref=e983] [cursor=pointer]: M-448
+                  - option "M-233" [ref=e984] [cursor=pointer]:
+                    - generic [ref=e985] [cursor=pointer]: M-233
+                  - option "M-266" [ref=e986] [cursor=pointer]:
+                    - generic [ref=e987] [cursor=pointer]: M-266
+                  - option "M-144" [ref=e988] [cursor=pointer]:
+                    - generic [ref=e989] [cursor=pointer]: M-144
+                  - option "M-533" [ref=e990] [cursor=pointer]:
+                    - generic [ref=e991] [cursor=pointer]: M-533
+                  - option "M-945" [ref=e992] [cursor=pointer]:
+                    - generic [ref=e993] [cursor=pointer]: M-945
+                  - option "M-190" [ref=e994] [cursor=pointer]:
+                    - generic [ref=e995] [cursor=pointer]: M-190
+                  - option "M-308" [ref=e996] [cursor=pointer]:
+                    - generic [ref=e997] [cursor=pointer]: M-308
+                  - option "M-103" [ref=e998] [cursor=pointer]:
+                    - generic [ref=e999] [cursor=pointer]: M-103
+                  - option "M-784" [ref=e1000] [cursor=pointer]:
+                    - generic [ref=e1001] [cursor=pointer]: M-784
+                  - option "M-611" [ref=e1002] [cursor=pointer]:
+                    - generic [ref=e1003] [cursor=pointer]: M-611
+                  - option "M-255" [ref=e1004] [cursor=pointer]:
+                    - generic [ref=e1005] [cursor=pointer]: M-255
+                  - option "M-962" [ref=e1006] [cursor=pointer]:
+                    - generic [ref=e1007] [cursor=pointer]: M-962
+                  - option "M-891" [ref=e1008] [cursor=pointer]:
+                    - generic [ref=e1009] [cursor=pointer]: M-891
+                  - option "M-697" [ref=e1010] [cursor=pointer]:
+                    - generic [ref=e1011] [cursor=pointer]: M-697
+                  - option "M-789" [ref=e1012] [cursor=pointer]:
+                    - generic [ref=e1013] [cursor=pointer]: M-789
+                  - option "M-232" [ref=e1014] [cursor=pointer]:
+                    - generic [ref=e1015] [cursor=pointer]: M-232
+                  - option "M-493" [ref=e1016] [cursor=pointer]:
+                    - generic [ref=e1017] [cursor=pointer]: M-493
+                  - option "M-943" [ref=e1018] [cursor=pointer]:
+                    - generic [ref=e1019] [cursor=pointer]: M-943
+                  - option "M-832" [ref=e1020] [cursor=pointer]:
+                    - generic [ref=e1021] [cursor=pointer]: M-832
+                  - option "M-834" [ref=e1022] [cursor=pointer]:
+                    - generic [ref=e1023] [cursor=pointer]: M-834
+                  - option "M-671" [ref=e1024] [cursor=pointer]:
+                    - generic [ref=e1025] [cursor=pointer]: M-671
+                  - option "M-632" [ref=e1026] [cursor=pointer]:
+                    - generic [ref=e1027] [cursor=pointer]: M-632
+                  - option "M-844" [ref=e1028] [cursor=pointer]:
+                    - generic [ref=e1029] [cursor=pointer]: M-844
+                  - option "M-825" [ref=e1030] [cursor=pointer]:
+                    - generic [ref=e1031] [cursor=pointer]: M-825
+                  - option "M-429" [ref=e1032] [cursor=pointer]:
+                    - generic [ref=e1033] [cursor=pointer]: M-429
+                  - option "M-637" [ref=e1034] [cursor=pointer]:
+                    - generic [ref=e1035] [cursor=pointer]: M-637
+                  - option "M-353" [ref=e1036] [cursor=pointer]:
+                    - generic [ref=e1037] [cursor=pointer]: M-353
+                  - option "M-303" [ref=e1038] [cursor=pointer]:
+                    - generic [ref=e1039] [cursor=pointer]: M-303
+                  - option "M-471" [ref=e1040] [cursor=pointer]:
+                    - generic [ref=e1041] [cursor=pointer]: M-471
+                  - option "M-624" [ref=e1042] [cursor=pointer]:
+                    - generic [ref=e1043] [cursor=pointer]: M-624
+                  - option "M-212" [ref=e1044] [cursor=pointer]:
+                    - generic [ref=e1045] [cursor=pointer]: M-212
+                  - option "M-337" [ref=e1046] [cursor=pointer]:
+                    - generic [ref=e1047] [cursor=pointer]: M-337
+                  - option "M-302" [ref=e1048] [cursor=pointer]:
+                    - generic [ref=e1049] [cursor=pointer]: M-302
+                  - option "M-843" [ref=e1050] [cursor=pointer]:
+                    - generic [ref=e1051] [cursor=pointer]: M-843
+                  - option "M-307" [ref=e1052] [cursor=pointer]:
+                    - generic [ref=e1053] [cursor=pointer]: M-307
+                  - option "M-837" [ref=e1054] [cursor=pointer]:
+                    - generic [ref=e1055] [cursor=pointer]: M-837
+                  - option "machine test" [ref=e1056] [cursor=pointer]:
+                    - generic [ref=e1057] [cursor=pointer]: machine test
+                  - option "rgfe" [ref=e1058] [cursor=pointer]:
+                    - generic [ref=e1059] [cursor=pointer]: rgfe
+                  - option "M-385" [ref=e1060] [cursor=pointer]:
+                    - generic [ref=e1061] [cursor=pointer]: M-385
+                  - option "M-527" [ref=e1062] [cursor=pointer]:
+                    - generic [ref=e1063] [cursor=pointer]: M-527
+                  - option "M-548" [ref=e1064] [cursor=pointer]:
+                    - generic [ref=e1065] [cursor=pointer]: M-548
+                  - option "M-22" [ref=e1066] [cursor=pointer]:
+                    - generic [ref=e1067] [cursor=pointer]: M-22
+                  - option "Machine-00S" [ref=e1068] [cursor=pointer]:
+                    - generic [ref=e1069] [cursor=pointer]: Machine-00S
+              - generic:
+                - generic:
+                  - generic: Machine
+                  - generic: "*"
+            - generic [ref=e1074]:
+              - spinbutton "Speed (Hour)" [ref=e1075]
+              - generic: 0/10
+              - generic:
+                - generic:
+                  - generic: Speed (Hour)
+                  - generic: "*"
+            - generic [ref=e1080]:
+              - textbox "UOM" [ref=e1081]
+              - generic: 0/100
+              - generic:
+                - generic:
+                  - generic: UOM
+                  - generic: "*"
+          - generic [ref=e1082]:
+            - button "Cancel" [ref=e1083] [cursor=pointer]:
+              - generic [ref=e1084] [cursor=pointer]: Cancel
+            - button "Save" [disabled] [ref=e1085]:
+              - generic [ref=e1086]:
+                - img [ref=e1087]: save
+                - text: Save
+```

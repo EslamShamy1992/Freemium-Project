@@ -1,2 +1,0 @@
-CheckList Type Added: depot
-CheckList Type Updated: extent

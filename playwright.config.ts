@@ -1,9 +1,9 @@
 import { defineConfig, devices } from '@playwright/test';
 import dotenv from 'dotenv';
 
-// Load the appropriate .env file based on NODE_ENV
-dotenv.config({ path: `.env.${process.env.NODE_ENV || 'dev'}` });
-
+// Load environment variables based on environment
+const envFile = process.env.CI ? '.env.dev' : `.env.${process.env.NODE_ENV || 'dev'}`;
+dotenv.config({ path: envFile });
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -19,16 +19,17 @@ export default defineConfig({
 
   globalSetup:require.resolve('./auth/global-setup'),
 
-  timeout: 90 * 1000,  
+   timeout: 2 * 60 * 1000,           // max test duration (2 minutes)
+  expect: { timeout: 10000 },   
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 1 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 3 : undefined,
+  workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['list'],                      // shows results in terminal
@@ -42,10 +43,14 @@ export default defineConfig({
     headless: process.env.CI ? true : false,
     storageState: "auth.json",
     // headless: false,
+     actionTimeout: 30_000,          // default timeout for actions like click/type
+    navigationTimeout: 60_000, 
 
+    screenshot: 'only-on-failure',  // Capture screenshot on failure
+    video: 'retain-on-failure',     // Record video for failed tests
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'retain-on-failure',
   },
 
   /* Configure projects for major browsers */
