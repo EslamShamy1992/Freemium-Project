@@ -223,12 +223,7 @@ The project is configured for CI/CD environments:
 - Retry logic for flaky tests
 - Parallel execution disabled in CI for stability
 
-## 📞 Support
 
-For questions or issues, please:
-1. Check existing issues in the repository
-2. Create a new issue with detailed description
-3. Include test logs and screenshots when applicable
 
 ## 📄 License
 
