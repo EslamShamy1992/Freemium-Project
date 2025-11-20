@@ -18,12 +18,12 @@ test.describe('Login TestCases', async () => {
   
 test('login with a valid credentials', async ({ page }) => {
 await loginpage.login_with_valid_account(companyAdminUsername,companyAdminPassword)
-await expect(page.getByRole('button', { name: 'Profile' }).first()).toBeVisible({ timeout: 10000 });
+await expect(page.getByRole('button', { name: 'Profile' }).first()).toBeVisible();
 
 });
 test('login with invalid credentials', async ({ page }) => {
     await loginpage.login_with_invalid_account('invalidUser', 'invalidPass'); 
-    await expect(page.getByText('Username and Email not Exist')).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText('Username and Email not Exist')).toBeVisible();
 
 });
 });

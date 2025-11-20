@@ -17,9 +17,9 @@ dotenv.config({ path: envFile });
  */
 export default defineConfig({ 
 
-  globalSetup:require.resolve('./auth/global-setup'),
+  // globalSetup:require.resolve('./auth/global-setup'),
 
-   timeout: 2 * 60 * 1000,           // max test duration (2 minutes)
+   timeout: 120* 1000,           // max test duration (2 minutes)
   expect: { timeout: 10000 },   
   testDir: './tests',
   /* Run tests in files in parallel */
@@ -43,8 +43,6 @@ export default defineConfig({
     headless: process.env.CI ? true : false,
     storageState: "auth.json",
     // headless: false,
-     actionTimeout: 30_000,          // default timeout for actions like click/type
-    navigationTimeout: 60_000, 
 
     screenshot: 'only-on-failure',  // Capture screenshot on failure
     video: 'retain-on-failure',     // Record video for failed tests

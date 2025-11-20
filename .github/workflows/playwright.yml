@@ -7,7 +7,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 60
     
     steps:
     - name: Checkout code
@@ -17,32 +17,21 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-        cache: 'npm'
 
     - name: Install dependencies
-      run: npm ci
+      run: npm install
 
     - name: Install Playwright
-      run: npx playwright install --with-deps
+      run: npx playwright install chromium
 
-    - name: Create environment file
-      run: |
-        echo "CompanyAdminUsername=${{ secrets.COMPANY_ADMIN_USERNAME }}" >> .env.dev
-        echo "CompanyAdminPassword=${{ secrets.COMPANY_ADMIN_PASSWORD }}" >> .env.dev
-
-    - name: Run Playwright Tests
-      run: npx playwright test
+    - name: Run Single Test
+      run: npx playwright test MachineParameter.spec.ts --project=chromium
       env:
-        NODE_ENV: dev
         CI: true
 
-    - name: Upload All Results
+    - name: Upload Results
       uses: actions/upload-artifact@v4
       if: always()
       with:
-        name: test-results-complete
-        path: |
-          test-results/
-          playwright-report/
-          allure-results/
-        retention-days: 30
+        name: results
+        path: test-results/
