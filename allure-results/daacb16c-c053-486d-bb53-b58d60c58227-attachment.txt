@@ -1,2 +1,0 @@
-CheckList Type Added: translation
-CheckList Type Updated: pick

@@ -53,7 +53,7 @@ test.describe('WasteConfig Tests', () => {
     await machineDetailsPage.addMachineDetails(departmentName, machine);
     console.log('Machine Details Added:', departmentName, machine);
     await wasteConfig.addWasteConfig(machine, categoryType, faultCode, faultName, reasons);
-    await expect(page.getByText('Waste fault created')).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText('Waste fault created')).toBeVisible();
     console.log('Waste Config Added:', machine, categoryType, faultCode, faultName, reasons);
   });
 
@@ -65,7 +65,7 @@ test.describe('WasteConfig Tests', () => {
     await wasteConfig.assertWasteConfigAdded();
     console.log('Waste Config Added:', machine, categoryType, faultCode, faultName, reasons);
     await wasteConfig.updateWasteConfig(updatedCategoryType, updatedFaultCode, updatedFaultName, updatedReasons);
-    await expect(page.getByText('Waste fault updated')).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText('Waste fault updated')).toBeVisible();
     console.log('Waste Config Updated:', updatedCategoryType, updatedFaultCode, updatedFaultName, updatedReasons);
   });
 
@@ -77,7 +77,7 @@ test.describe('WasteConfig Tests', () => {
     await wasteConfig.assertWasteConfigAdded();
     console.log('Waste Config Added:', machine, categoryType, faultCode, faultName, reasons);
     await wasteConfig.deleteWasteConfig();
-    await expect(page.getByText('Waste fault deleted')).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText('Waste fault deleted')).toBeVisible();
   });
 });
 

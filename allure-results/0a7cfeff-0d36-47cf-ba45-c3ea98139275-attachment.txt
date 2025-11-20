@@ -1,8 +1,0 @@
-Machine Details Added: Kids Machine-615
-Waste Config Added: Machine-615 Waste YKcXI lieu [ 'cross-contamination', 'lotion', 'electronics', 'devastation' ]
-Waste Config Updated: Updated Waste YKcXI-updated lieu-updated [
-  'cross-contamination-updated',
-  'lotion-updated',
-  'electronics-updated',
-  'devastation-updated'
-]

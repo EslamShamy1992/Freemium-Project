@@ -1,2 +1,0 @@
-Machine Details Added: Electronics Machine-985
-Waste Config Added: Machine-985 Waste VOdZG statue [ 'tapioca', 'relative', 'cauliflower', 'obesity' ]

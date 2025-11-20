@@ -1,2 +1,0 @@
-Machine Details Added: Jewelry Machine-826
-Machine Parameter Added: Machine-826 community 14 Int

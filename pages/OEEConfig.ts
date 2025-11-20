@@ -20,7 +20,7 @@ export class OEEConfig extends BasePages {
 
   constructor(page: Page) {
     super(page);
-    this.oeeConfigMenu = page.getByText(' OEE Configuration ');
+    this.oeeConfigMenu = page.getByText('assessment OEE Configuration')
     this.addBtn = page.getByRole('button', { name: 'Add' }).first();
     this.machineDropdown = page.getByRole('combobox', { name: 'Machine' }).locator('span');
     this.machineOption = (machine: string) => page.getByRole('option', { name: machine }).first();

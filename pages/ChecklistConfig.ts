@@ -131,5 +131,6 @@ export class ChecklistConfig extends BasePages {
 
   async saveChecklist() {
     await this.saveBtn.click();
+    await this.page.waitForTimeout(2000);
   }
 }

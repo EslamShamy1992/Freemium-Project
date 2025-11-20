@@ -152,39 +152,39 @@ let preferredDataType: string;
 
   test("verify create manual master data", async ({ page }) => {
 
-      await loginpage.login_with_valid_account(companyAdminUsername,companyAdminPassword)
+     await loginpage.login_with_valid_account(companyAdminUsername,companyAdminPassword)
     await plantsPage.openManulSetup();
     await machineDetails.addMachineDetails(departmentName, machineName);
     console.log('Machine Details Added:', departmentName, machineName);
-    await expect(page.getByText('Record added successfully')).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText('Record added successfully')).toBeVisible();
     await machineParameter.addMachineParameter(machineName, Parameter, samplingInterval,preferredDataType);
     console.log('Machine Parameter Added:', machineName, Parameter, samplingInterval, preferredDataType);
-    await expect(page.getByText('Record Inserted successfully')).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText('Record Inserted successfully')).toBeVisible();
     await productConfig.addProductConfig(productCode, productDesc, machineName, speed, uom);
     console.log('Product Config Added:',productCode, productDesc, machineName, speed, uom);
-    await expect(page.getByText('Product configuration created')).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText('Product configuration created')).toBeVisible();
     await downtimeConfig.addDownTimeConfig(machineName, faultCode, faultName, reasons);
     console.log('DownTime Config Added:',machineName, faultCode, faultName, reasons);
-    await expect(page.getByText('Downtime fault created')).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText('Downtime fault created')).toBeVisible();
     await wasteConfig.addWasteConfig(machineName,categoryType, faultCode, faultName, reasons);
     console.log('Waste Config Added:',machineName,categoryType, faultCode, faultName, reasons);
-    await expect(page.getByText('Waste fault created')).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText('Waste fault created')).toBeVisible();
     await userConfig.addUserConfig(firstName, lastName, phone, email, password);
     console.log('User Config Added:', firstName, lastName, phone, email);
-    await expect(page.getByText('Employee Created Successfully')).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText('Employee Created Successfully')).toBeVisible();
    await crewSchedule.addCrewSchedule(shift);
    await crewSchedule.deleteCrewSchedule();
    await crewSchedule.addCrewSchedule(shift);
-   await expect(page.getByText('Shift and Crew Schedule created')).toBeVisible({ timeout: 10000 });
+   await expect(page.getByText('Shift and Crew Schedule created')).toBeVisible();
     await oeeConfig.addOEEConfig(machineName,Parameter,auto,faultName);
     console.log('OEE Config Added:', machineName,Parameter,auto,faultName);
-    await expect (page.getByText('OEE Configuration Added Successfully')).toBeVisible({ timeout: 10000 });
+    await expect (page.getByText('OEE Configuration Added Successfully')).toBeVisible();
     await parameterSpecifications.navigatetoParameterSpecifications();
     await parameterSpecifications.addParameterSpecification( Parameter, product, lrl, lsl, lwl, target, uwl,usl );
     console.log('Parameter Specifications Added:', Parameter, product, lrl, lsl, lwl, target, uwl, usl);
     await checkListType.addCheckListType(checklisttype);
     console.log('CheckList Type Added:',checklisttype);
-    await expect( page.getByText('CheckList Type Added')).toBeVisible({ timeout: 10000 });
+    await expect( page.getByText('CheckList Type Added')).toBeVisible();
     await checklistConfig.navigateToChecklistConfig();
     await checklistConfig.addChecklistConfig(checklistNameInput,checklisttype);
     await checklistConfig.addGroup(groupName);
@@ -192,11 +192,11 @@ let preferredDataType: string;
     await checklistConfig.addTextValue(addtext, '10', '100');
     await checklistConfig.addGoodImage(goodImagePath);
     await checklistConfig.addBadImage(badImagePath);
-    await expect(page.getByText(goodImagePath)).toBeVisible({ timeout: 10000 });
-    await expect(page.getByText(badImagePath)).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText(goodImagePath)).toBeVisible();
+    await expect(page.getByText(badImagePath)).toBeVisible();
     await checklistConfig.saveChecklist();
     console.log(` Checklist Name: ${checklistNameInput} Checklist Type: ${checklisttype} Group: ${groupName} Item: ${itemName}Text: ${addtext}`);
-    await expect(page.getByText('CheckList Added Successfuly')).toBeVisible({ timeout: 10000 });
+    await expect(page.getByText('CheckList Added Successfuly')).toBeVisible();
  
 
 });

@@ -27,7 +27,7 @@ test.describe('CrewSchedule', () => {
    await crewSchedule.addCrewSchedule(shift);
    await crewSchedule.deleteCrewSchedule();
    await crewSchedule.addCrewSchedule(shift);
-   await expect(page.getByText('Shift and Crew Schedule created')).toBeVisible({ timeout: 10000 });
+   await expect(page.getByText('Shift and Crew Schedule created')).toBeVisible();
   console.log('Crew Schedule Added and Deleted:',shift);
 
 
@@ -39,7 +39,7 @@ test('verify update CrewSchedule ', async ({page}) => {
   console.log('Crew Schedule Added:',shift);
   await crewSchedule.updateCrewSchedule(updatedShift);
   console.log('Crew Schedule Updated:',updatedShift);
-  await expect(page.getByText('Shift and crew schedule updated')).toBeVisible({ timeout: 10000 });
+  await expect(page.getByText('Shift and crew schedule updated')).toBeVisible();
 
 });
 
@@ -47,7 +47,7 @@ test('verify delete CrewSchedule ', async ({page}) => {
   await plantsPage.openManulSetup()
   await crewSchedule.addCrewSchedule(shift);
   await crewSchedule.deleteCrewSchedule();
-  await expect(page.getByText('Shift and crew schedule deleted')).toBeVisible({ timeout: 10000 });
+  await expect(page.getByText('Shift and crew schedule deleted')).toBeVisible();
   await expect(page.getByText(shift)).not.toBeVisible();
   console.log('Crew Schedule Deleted:',shift);  
 });
